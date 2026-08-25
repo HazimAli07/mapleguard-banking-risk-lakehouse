@@ -154,7 +154,7 @@ for threshold in np.arange(.10, .81, .02):
 eligible_thresholds = [row for row in threshold_results if row[1] >= .55]
 THRESHOLD = max(eligible_thresholds or threshold_results, key=lambda row: row[2])[0]
 
-model = pipeline.fit(add_class_weights(development))
+model = threshold_model
 
 holdout_scored = model.transform(holdout).withColumn("risk_score", vector_to_array("probability")[1])
 holdout_scored = holdout_scored.withColumn("is_alert", (F.col("risk_score") >= THRESHOLD).cast("int"))
