@@ -1,0 +1,501 @@
+transaction_id,event_ts,province,channel,merchant_category,customer_segment,amount_cad,risk_score,risk_tier,reason_code,is_fraud
+TX0016686,2026-06-15 23:53:00,MB,E-commerce,Electronics,Everyday,4900.0,0.9999965181195348,Critical,"high amount, unusual hour",0
+TX0029277,2026-05-11 16:41:00,ON,Mobile wallet,Electronics,Everyday,4900.0,0.9999897138411954,Critical,high amount,0
+TX0020113,2026-02-19 11:21:00,QC,Point of sale,Electronics,Everyday,4900.0,0.9999887940431738,Critical,high amount,0
+TX0006173,2026-04-16 05:44:00,ON,Point of sale,Cash,Everyday,4295.64,0.9999644922899208,Critical,"low device trust, high amount",0
+TX0027474,2026-06-09 01:04:00,AB,Recurring,Cash,Everyday,4412.02,0.9999365670462219,Critical,"high amount, unusual hour",1
+TX0003476,2026-05-29 15:47:00,ON,ATM,Electronics,Everyday,4198.9,0.9999059040261753,Critical,high amount,0
+TX0038853,2026-03-17 17:20:00,AB,Point of sale,Electronics,Small business,4181.24,0.9998993508692261,Critical,high amount,0
+TX0052502,2026-03-11 19:25:00,QC,Point of sale,Dining,Small business,4271.27,0.9998515731349226,Critical,high amount,0
+TX0031433,2026-02-20 12:55:00,QC,Recurring,Electronics,Everyday,3578.45,0.9997362351924917,Critical,high amount,0
+TX0007990,2026-04-21 03:28:00,QC,E-commerce,Travel,Student,3272.63,0.9997358803218807,Critical,"high amount, unusual hour",0
+TX0042224,2026-06-16 11:55:00,QC,Mobile wallet,Dining,Everyday,3554.36,0.9997289710181515,Critical,high amount,0
+TX0001765,2026-08-14 19:32:00,ON,E-commerce,Travel,Everyday,3608.71,0.9995904325231588,Critical,high amount,0
+TX0055839,2026-05-26 16:31:00,AB,ATM,Travel,Student,3622.32,0.9995305507199492,Critical,high amount,0
+TX0021237,2026-05-15 10:06:00,AB,ATM,Electronics,Everyday,3397.78,0.9994507282949474,Critical,high amount,0
+TX0006401,2026-02-12 22:31:00,ON,Point of sale,Travel,Affluent,3792.59,0.9994473862705746,Critical,high amount,0
+TX0057660,2026-08-20 04:18:00,AB,Recurring,Travel,Everyday,2686.83,0.9994216670398756,Critical,"international, high amount, unusual hour",0
+TX0017792,2026-02-18 13:05:00,ON,Recurring,Other,Everyday,3534.51,0.9991350607691404,Critical,high amount,0
+TX0029035,2026-02-14 07:21:00,ON,Mobile wallet,Electronics,Everyday,3103.6,0.9990479597156923,Critical,high amount,0
+TX0033154,2026-05-16 23:00:00,ON,Mobile wallet,Travel,Small business,3224.25,0.998556806339421,Critical,"high amount, unusual hour",0
+TX0028760,2026-06-25 03:24:00,ON,Point of sale,Travel,Everyday,3235.13,0.9980693832890225,Critical,"high amount, unusual hour, new account",1
+TX0054958,2026-01-28 05:09:00,QC,Point of sale,Travel,Everyday,3213.84,0.9980243189625183,Critical,high amount,0
+TX0058028,2026-03-28 10:39:00,ON,E-commerce,Travel,Everyday,1868.22,0.9977678190452219,Critical,"international, high amount",0
+TX0042229,2026-08-24 21:50:00,ON,E-commerce,Electronics,Student,1466.34,0.9973962894145468,Critical,"international, low device trust, high amount",1
+TX0053262,2026-05-02 06:52:00,QC,Point of sale,Travel,Everyday,1963.37,0.9971404195802037,Critical,"international, high amount",0
+TX0036588,2026-05-28 21:36:00,BC,Point of sale,Digital services,Affluent,2300.81,0.9970936744224912,Critical,"high velocity, high amount",1
+TX0030650,2026-08-04 04:54:00,ON,E-commerce,Travel,Affluent,2068.72,0.9968420153445086,Critical,"high amount, unusual hour",0
+TX0021643,2026-06-24 12:57:00,QC,E-commerce,Electronics,Everyday,2109.67,0.9966003643159635,Critical,high amount,0
+TX0040750,2026-05-30 11:08:00,AB,Mobile wallet,Electronics,Small business,2408.76,0.9965658189356252,Critical,high amount,0
+TX0036359,2026-03-11 20:46:00,BC,Recurring,Cash,Small business,3000.92,0.9962776744919006,Critical,high amount,0
+TX0042568,2026-01-13 11:37:00,AB,ATM,Cash,Small business,2485.94,0.9959602838238736,Critical,"high velocity, high amount",0
+TX0039641,2026-04-09 02:24:00,ON,E-commerce,Digital services,Student,2032.6,0.9957875163413019,Critical,"high amount, unusual hour",0
+TX0006803,2026-05-09 00:50:00,ON,E-commerce,Electronics,Affluent,1743.2,0.9957625149745495,Critical,"high amount, unusual hour",1
+TX0031979,2026-03-08 04:34:00,ON,E-commerce,Travel,New-to-bank,2256.09,0.9955507216455408,Critical,"high amount, unusual hour",0
+TX0051346,2026-07-09 01:31:00,QC,E-commerce,Travel,Affluent,1169.82,0.9955118496757378,Critical,"international, high amount, unusual hour",0
+TX0018421,2026-08-17 16:03:00,ON,E-commerce,Cash,Affluent,2346.91,0.9954825251009825,Critical,high amount,0
+TX0036270,2026-05-09 05:45:00,QC,E-commerce,Travel,Everyday,1302.48,0.9953375131593852,Critical,"international, high amount",0
+TX0018255,2026-06-22 20:43:00,ON,Mobile wallet,Travel,Everyday,2148.81,0.9949076825125093,Critical,high amount,0
+TX0040195,2026-04-10 07:58:00,ON,E-commerce,Dining,Student,1464.5,0.9947701120667363,Critical,"international, high amount",1
+TX0022150,2026-03-03 17:14:00,QC,Recurring,Travel,New-to-bank,2145.2,0.9945895938888183,Critical,"international, high amount",0
+TX0024017,2026-07-21 00:39:00,MB,Recurring,Travel,Student,2482.34,0.9936925556088706,Critical,"high amount, unusual hour",0
+TX0014331,2026-07-31 12:10:00,MB,E-commerce,Cash,New-to-bank,1259.36,0.9935638732597125,Critical,"international, high amount",1
+TX0033909,2026-07-18 19:28:00,BC,E-commerce,Electronics,New-to-bank,1100.75,0.9926807676906462,Critical,"international, high amount",1
+TX0055030,2026-05-31 06:15:00,QC,E-commerce,Electronics,Small business,1531.91,0.9925265015582261,Critical,high amount,0
+TX0021138,2026-06-21 19:51:00,AB,E-commerce,Travel,Everyday,2211.6,0.9924268234780356,Critical,high amount,0
+TX0027699,2026-04-01 21:52:00,ON,Recurring,Travel,Everyday,1841.57,0.9921993761614827,Critical,"international, high amount",1
+TX0000339,2026-01-02 10:32:00,BC,E-commerce,Dining,Affluent,1856.91,0.9915687176193478,Critical,high amount,0
+TX0048744,2026-03-28 19:46:00,ON,E-commerce,Travel,Small business,1549.5,0.9914086176545452,Critical,"international, high amount",0
+TX0037177,2026-05-24 04:31:00,ON,E-commerce,Travel,Affluent,1256.77,0.9911753869232492,Critical,"international, high amount, unusual hour",0
+TX0047281,2026-04-01 01:29:00,QC,E-commerce,Travel,Affluent,855.32,0.9910893663045128,Critical,"international, high amount, unusual hour",0
+TX0057789,2026-08-10 11:30:00,QC,ATM,Electronics,Student,1361.12,0.9907088171440795,Critical,"international, high amount",0
+TX0020111,2026-01-23 23:56:00,QC,E-commerce,Electronics,Affluent,1572.45,0.9897320601785261,Critical,"high amount, unusual hour",0
+TX0003754,2026-04-08 23:30:00,ON,Recurring,Travel,Everyday,2468.02,0.9895631149714956,Critical,"high amount, unusual hour",0
+TX0027351,2026-01-11 02:00:00,NB,E-commerce,Electronics,Affluent,970.33,0.9894357720219941,Critical,"international, high amount, unusual hour",0
+TX0045002,2026-03-22 15:06:00,ON,Mobile wallet,Dining,Student,1670.04,0.9891694304414729,Critical,high amount,0
+TX0031893,2026-07-28 15:40:00,ON,Point of sale,Fuel,New-to-bank,2807.43,0.9890466338022249,Critical,high amount,0
+TX0000307,2026-06-27 11:03:00,NB,Mobile wallet,Fuel,Affluent,1876.45,0.9886256299289189,Critical,high amount,0
+TX0000243,2026-04-01 15:47:00,QC,Mobile wallet,Electronics,Everyday,1519.59,0.9885571880726567,Critical,high amount,0
+TX0033245,2026-01-22 03:36:00,NB,E-commerce,Travel,Affluent,1990.91,0.9883697071822198,Critical,"high amount, unusual hour",0
+TX0032022,2026-04-08 18:54:00,ON,E-commerce,Travel,New-to-bank,715.46,0.9881785356486577,Critical,"international, high velocity, high amount",1
+TX0031039,2026-08-19 23:59:00,MB,Point of sale,Travel,Everyday,2565.29,0.9880296083381299,Critical,"high amount, unusual hour",0
+TX0021525,2026-01-16 02:36:00,ON,E-commerce,Other,Student,1482.46,0.9878577165050831,Critical,"high amount, unusual hour",0
+TX0013877,2026-02-28 12:22:00,ON,E-commerce,Cash,New-to-bank,984.62,0.9876414623509462,Critical,"international, high amount",0
+TX0047257,2026-04-18 09:28:00,ON,ATM,Travel,Everyday,1689.93,0.9874298728244406,Critical,"international, high amount",0
+TX0004000,2026-08-17 15:49:00,QC,Recurring,Other,Student,1228.1,0.9872210472768811,Critical,"international, high amount",0
+TX0011085,2026-03-09 10:22:00,AB,Mobile wallet,Electronics,Everyday,1714.37,0.9872087086281642,Critical,high amount,0
+TX0028109,2026-08-22 23:18:00,ON,E-commerce,Electronics,Student,1316.27,0.9871734022935659,Critical,"high velocity, high amount, unusual hour",1
+TX0030887,2026-05-26 08:17:00,QC,E-commerce,Travel,Student,1253.31,0.987139708335005,Critical,"international, high amount",0
+TX0017436,2026-04-03 10:13:00,ON,E-commerce,Digital services,Affluent,437.51,0.9868660677499107,Critical,international,0
+TX0028217,2026-06-25 10:39:00,QC,E-commerce,Travel,New-to-bank,1028.73,0.986477494071148,Critical,"international, high amount",0
+TX0007358,2026-03-07 01:39:00,BC,E-commerce,Electronics,Student,883.65,0.9864381045115673,Critical,"international, high amount, unusual hour",1
+TX0000133,2026-08-23 07:31:00,QC,ATM,Travel,Everyday,2477.87,0.986160928262177,Critical,high amount,0
+TX0012484,2026-03-05 07:41:00,ON,ATM,Other,Affluent,824.48,0.9849042570567811,Critical,"international, low device trust, high amount",0
+TX0042048,2026-07-03 17:04:00,AB,E-commerce,Dining,Affluent,1532.83,0.984893534203957,Critical,high amount,0
+TX0009739,2026-07-28 14:19:00,AB,Mobile wallet,Cash,Small business,2128.17,0.9842624940012844,Critical,high amount,0
+TX0042172,2026-07-28 07:08:00,QC,E-commerce,Digital services,Student,315.4,0.984183701107095,Critical,international,1
+TX0013461,2026-03-26 06:58:00,BC,E-commerce,Fuel,Small business,982.75,0.9841822509060253,Critical,"international, high amount",0
+TX0052694,2026-08-05 17:02:00,QC,E-commerce,Dining,Student,1752.39,0.9841545576781346,Critical,high amount,0
+TX0032216,2026-05-05 04:08:00,ON,Mobile wallet,Grocery,Small business,1881.67,0.9840722329426158,Critical,"high amount, unusual hour",0
+TX0023499,2026-05-13 03:21:00,QC,Mobile wallet,Electronics,Everyday,1592.2,0.9840461797544877,Critical,"high amount, unusual hour",0
+TX0023345,2026-06-15 12:55:00,AB,Point of sale,Travel,Everyday,1358.63,0.9839160233196473,Critical,"international, high amount",0
+TX0059983,2026-03-14 12:55:00,ON,E-commerce,Travel,Everyday,1976.98,0.9838962449027919,Critical,high amount,0
+TX0037644,2026-06-22 05:50:00,ON,E-commerce,Fuel,Small business,2125.71,0.9836190200112324,Critical,high amount,0
+TX0039297,2026-01-15 10:11:00,AB,E-commerce,Electronics,New-to-bank,633.45,0.9835457273125016,Critical,"international, high amount",1
+TX0007835,2026-07-23 11:13:00,QC,Recurring,Travel,Small business,2457.44,0.9833739331643269,Critical,high amount,0
+TX0054036,2026-05-18 10:15:00,ON,E-commerce,Electronics,Student,1263.35,0.9832937814889485,Critical,high amount,0
+TX0006611,2026-06-26 08:50:00,BC,Mobile wallet,Travel,Everyday,1004.26,0.9831669244891386,Critical,"international, high amount, distance anomaly",0
+TX0003613,2026-04-10 19:25:00,QC,E-commerce,Electronics,Student,1304.28,0.982944176898397,Critical,high amount,0
+TX0051498,2026-03-23 07:41:00,AB,E-commerce,Other,Everyday,1391.47,0.9827842025145309,Critical,high amount,0
+TX0003621,2026-01-05 09:54:00,AB,E-commerce,Travel,New-to-bank,1802.06,0.982654691491937,Critical,high amount,0
+TX0020833,2026-01-23 05:54:00,ON,Mobile wallet,Grocery,Everyday,1754.19,0.9822247790231752,Critical,"low device trust, high amount",0
+TX0019522,2026-06-14 23:30:00,QC,ATM,Travel,Affluent,1438.87,0.9821019488446376,Critical,"international, high amount, unusual hour",0
+TX0052750,2026-03-10 08:17:00,BC,E-commerce,Fuel,Affluent,905.65,0.981931450659683,Critical,"international, high amount",0
+TX0009373,2026-03-22 09:19:00,BC,Point of sale,Grocery,New-to-bank,1937.63,0.9815037356567413,Critical,high amount,0
+TX0019973,2026-06-29 00:58:00,QC,E-commerce,Grocery,Everyday,702.74,0.9813667401414924,Critical,"international, high amount, unusual hour",1
+TX0059411,2026-04-06 22:41:00,AB,ATM,Dining,Affluent,647.32,0.9813432049692444,Critical,"international, low device trust, high velocity",1
+TX0023982,2026-07-09 17:56:00,BC,Mobile wallet,Electronics,Affluent,1758.88,0.981110185194652,Critical,high amount,1
+TX0034850,2026-05-11 12:28:00,BC,E-commerce,Travel,Small business,1010.49,0.9810484779676496,Critical,"international, high amount",0
+TX0036474,2026-05-22 00:51:00,QC,Mobile wallet,Dining,Everyday,1559.84,0.9810084096085439,Critical,"high amount, unusual hour",0
+TX0004220,2026-05-31 06:38:00,ON,E-commerce,Dining,Affluent,350.98,0.9808693374980105,Critical,international,0
+TX0043615,2026-04-14 05:24:00,NS,E-commerce,Travel,New-to-bank,615.38,0.9808384171639867,Critical,"international, high amount",0
+TX0016179,2026-04-19 06:22:00,ON,E-commerce,Digital services,Everyday,156.43,0.9800822914603831,Critical,"international, low device trust",1
+TX0022687,2026-01-22 02:52:00,MB,E-commerce,Travel,Affluent,164.45,0.9798800621388979,Critical,"international, high velocity, unusual hour",1
+TX0004196,2026-05-01 21:02:00,ON,Point of sale,Travel,Everyday,2453.51,0.9796478991553185,Critical,"high amount, distance anomaly",0
+TX0027372,2026-04-08 00:09:00,NS,Recurring,Digital services,Everyday,2322.62,0.9792761883500348,Critical,"high amount, unusual hour",0
+TX0004696,2026-03-09 11:02:00,AB,Point of sale,Electronics,Student,2048.68,0.9788078052670617,Critical,high amount,0
+TX0020709,2026-05-14 06:01:00,MB,E-commerce,Electronics,Affluent,1288.26,0.9787570702311978,Critical,high amount,0
+TX0014668,2026-01-22 03:47:00,NS,ATM,Travel,Everyday,2401.15,0.9784692045123573,Critical,"high amount, unusual hour",0
+TX0051909,2026-04-04 00:52:00,AB,E-commerce,Cash,Everyday,1748.43,0.9782957073530981,Critical,"high amount, unusual hour",0
+TX0007982,2026-02-07 01:58:00,BC,E-commerce,Dining,Affluent,513.78,0.9781631018826342,Critical,"international, high amount, unusual hour",0
+TX0052084,2026-07-11 11:08:00,ON,E-commerce,Electronics,Affluent,473.74,0.9780405084075109,Critical,international,0
+TX0046437,2026-04-23 04:46:00,ON,E-commerce,Electronics,Everyday,568.67,0.9778404225885126,Critical,"international, high amount, unusual hour",1
+TX0027492,2026-06-29 01:17:00,QC,E-commerce,Travel,Everyday,939.58,0.9777813230950548,Critical,"international, high amount, unusual hour",1
+TX0049267,2026-03-01 03:52:00,QC,E-commerce,Travel,Everyday,615.27,0.9775574531162948,Critical,"international, high amount, unusual hour",0
+TX0053325,2026-08-26 13:47:00,AB,Mobile wallet,Electronics,New-to-bank,1001.89,0.977470091824694,Critical,"international, high amount",0
+TX0002185,2026-05-28 05:19:00,BC,E-commerce,Travel,New-to-bank,232.97,0.9773157877493913,Critical,"international, high velocity",1
+TX0026765,2026-06-20 00:08:00,ON,Mobile wallet,Travel,Everyday,454.7,0.9771166635147592,Critical,"international, low device trust, unusual hour",1
+TX0038280,2026-01-20 03:03:00,AB,Point of sale,Cash,New-to-bank,1887.36,0.977100824570237,Critical,"high amount, unusual hour",0
+TX0036635,2026-01-23 13:44:00,QC,Mobile wallet,Electronics,Student,1646.41,0.9766210205953414,Critical,high amount,1
+TX0050654,2026-04-13 10:12:00,NB,E-commerce,Cash,Everyday,1576.5,0.9765297347972074,Critical,high amount,0
+TX0046412,2026-08-11 06:13:00,ON,E-commerce,Travel,Everyday,763.33,0.9765114065639982,Critical,"international, high amount",0
+TX0010979,2026-06-14 20:33:00,QC,Mobile wallet,Travel,Everyday,1060.8,0.9765069113585535,Critical,"international, high amount",1
+TX0014038,2026-02-24 07:24:00,SK,E-commerce,Travel,Everyday,445.19,0.9756979962464598,Critical,international,0
+TX0052224,2026-01-01 03:05:00,QC,E-commerce,Electronics,Affluent,905.26,0.9756136907911716,Critical,"low device trust, high amount, unusual hour",0
+TX0042637,2026-05-20 17:17:00,QC,E-commerce,Travel,Everyday,1879.94,0.9753475855540804,Critical,high amount,0
+TX0043834,2026-05-04 04:10:00,QC,E-commerce,Digital services,Student,253.92,0.9753350446948297,Critical,"international, unusual hour",1
+TX0007185,2026-06-14 05:09:00,QC,E-commerce,Electronics,Affluent,118.24,0.9748880266028604,Critical,international,0
+TX0055203,2026-03-21 01:39:00,BC,E-commerce,Travel,Affluent,858.99,0.9748730509661979,Critical,"international, high amount, unusual hour",0
+TX0052213,2026-08-04 04:35:00,AB,Point of sale,Digital services,Everyday,2031.69,0.9748026958262476,Critical,"high amount, unusual hour",0
+TX0044152,2026-06-04 00:41:00,QC,E-commerce,Travel,Affluent,41.5,0.9747825754929474,Critical,"international, unusual hour, distance anomaly",0
+TX0030216,2026-07-25 09:44:00,QC,E-commerce,Cash,Student,564.55,0.9744212683057523,Critical,"international, low device trust, high amount",1
+TX0003144,2026-07-10 04:39:00,ON,E-commerce,Digital services,Affluent,153.18,0.974254016822716,Critical,"international, unusual hour",1
+TX0039069,2026-02-22 00:37:00,AB,Point of sale,Electronics,Everyday,909.85,0.9739689463825375,Critical,"international, high amount, unusual hour",0
+TX0028533,2026-08-22 13:20:00,ON,ATM,Electronics,Everyday,1918.21,0.9739173826846248,Critical,high amount,0
+TX0040479,2026-03-08 13:25:00,AB,Point of sale,Grocery,Affluent,2095.86,0.973861922129782,Critical,high amount,0
+TX0049178,2026-06-24 19:53:00,AB,E-commerce,Grocery,Affluent,59.43,0.9738404624136763,Critical,"international, high velocity, distance anomaly",1
+TX0044681,2026-08-03 11:40:00,QC,Mobile wallet,Electronics,Student,1474.12,0.9736587647401826,Critical,high amount,0
+TX0037911,2026-04-19 06:36:00,QC,Recurring,Digital services,Everyday,1082.67,0.9734326622151939,Critical,"international, high amount",0
+TX0036179,2026-07-12 13:15:00,MB,E-commerce,Travel,Affluent,261.58,0.9733630805732773,Critical,"international, low device trust",1
+TX0004017,2026-08-23 17:37:00,NS,Point of sale,Electronics,Everyday,1673.16,0.9732180093748926,Critical,"high velocity, high amount",0
+TX0008796,2026-03-25 00:28:00,SK,E-commerce,Cash,Affluent,499.21,0.9731866855918531,Critical,"international, low device trust, unusual hour",0
+TX0026078,2026-06-06 09:05:00,BC,E-commerce,Travel,Everyday,747.24,0.9725827106419846,Critical,"international, high amount",0
+TX0057400,2026-04-20 09:18:00,ON,Mobile wallet,Dining,New-to-bank,363.47,0.9723310911921851,Critical,"international, low device trust",0
+TX0007567,2026-04-18 11:21:00,QC,Mobile wallet,Electronics,Everyday,1199.77,0.9719088817023586,Critical,high amount,0
+TX0020816,2026-01-21 19:46:00,ON,Point of sale,Grocery,Everyday,1438.63,0.9718144517882744,Critical,"international, high amount",0
+TX0029664,2026-07-21 07:30:00,QC,ATM,Travel,Everyday,1176.14,0.9716685777141857,Critical,"international, high amount",0
+TX0055911,2026-08-24 11:02:00,ON,E-commerce,Electronics,Student,335.09,0.9715880761462066,Critical,international,0
+TX0003783,2026-06-19 02:28:00,AB,Recurring,Travel,Everyday,1174.99,0.9714649639437659,Critical,"international, high amount, unusual hour",0
+TX0029845,2026-02-07 15:08:00,BC,E-commerce,Digital services,Affluent,79.83,0.971128903182648,Critical,international,0
+TX0016521,2026-06-23 02:07:00,BC,E-commerce,Fuel,Everyday,1739.05,0.9710531320411561,Critical,"high amount, unusual hour",0
+TX0051290,2026-04-23 09:34:00,AB,E-commerce,Electronics,Everyday,1224.29,0.9706809067874116,Critical,high amount,0
+TX0020533,2026-06-27 01:11:00,ON,E-commerce,Travel,Everyday,594.67,0.9704126955616547,Critical,"international, high amount, unusual hour",0
+TX0038921,2026-06-10 05:20:00,SK,Mobile wallet,Travel,Small business,1440.44,0.9703645324743483,Critical,high amount,1
+TX0055882,2026-03-08 02:12:00,AB,E-commerce,Dining,Student,1431.51,0.9703045914375508,Critical,"high amount, unusual hour",0
+TX0019903,2026-05-17 20:46:00,BC,E-commerce,Dining,Student,1312.36,0.9702853070337828,Critical,"high amount, distance anomaly",0
+TX0058145,2026-06-19 19:04:00,MB,Point of sale,Travel,Small business,1205.39,0.9701312159044468,Critical,"international, high amount",0
+TX0028963,2026-06-08 19:36:00,ON,E-commerce,Travel,Affluent,861.32,0.969967694374959,Critical,"international, high amount",1
+TX0049784,2026-03-12 15:30:00,ON,ATM,Travel,Everyday,1985.23,0.9697773501615056,Critical,high amount,0
+TX0022626,2026-06-12 21:42:00,QC,Point of sale,Cash,Student,1180.36,0.9695763024521159,Critical,"international, high amount",0
+TX0009441,2026-08-07 08:32:00,QC,E-commerce,Digital services,Everyday,39.67,0.9691917243136314,Critical,"international, high velocity",0
+TX0041680,2026-06-20 00:19:00,QC,E-commerce,Electronics,Affluent,78.92,0.9691916955329308,Critical,"international, unusual hour",0
+TX0004340,2026-04-19 00:13:00,BC,E-commerce,Digital services,New-to-bank,132.26,0.9691265037668996,Critical,"international, unusual hour",1
+TX0022176,2026-07-09 20:57:00,AB,ATM,Electronics,Affluent,1526.7,0.9689813309646563,Critical,high amount,0
+TX0051910,2026-03-28 03:02:00,QC,E-commerce,Other,Student,67.8,0.9683870904252195,Critical,"international, unusual hour",0
+TX0011940,2026-03-16 01:42:00,ON,E-commerce,Travel,Everyday,703.98,0.968042229770152,Critical,"international, high amount, unusual hour",1
+TX0008254,2026-06-09 02:01:00,BC,E-commerce,Electronics,Student,89.18,0.9677845914822917,Critical,"international, unusual hour, distance anomaly",1
+TX0029867,2026-01-28 01:30:00,QC,E-commerce,Travel,Everyday,421.49,0.9675556295465061,Critical,"international, unusual hour, distance anomaly",0
+TX0038474,2026-01-02 23:31:00,QC,E-commerce,Electronics,Affluent,382.63,0.9674565759952544,Critical,"international, unusual hour",0
+TX0053321,2026-08-06 10:31:00,ON,Recurring,Electronics,Everyday,1168.8,0.9674075458696386,Critical,"international, high amount",0
+TX0042972,2026-08-05 00:15:00,BC,E-commerce,Digital services,Everyday,276.18,0.9671093605607455,Critical,"international, unusual hour",0
+TX0015277,2026-01-04 22:18:00,AB,E-commerce,Electronics,Everyday,1336.99,0.9667687627376874,Critical,high amount,0
+TX0024651,2026-03-11 19:20:00,QC,E-commerce,Electronics,Small business,1456.51,0.9666916177897277,Critical,high amount,0
+TX0052378,2026-02-05 08:37:00,AB,E-commerce,Travel,Small business,668.48,0.9666021216618874,Critical,"international, high amount",1
+TX0041383,2026-05-10 22:50:00,ON,Recurring,Electronics,Everyday,2083.37,0.9665766711015055,Critical,high amount,0
+TX0049118,2026-08-21 17:22:00,QC,E-commerce,Electronics,Student,32.31,0.966528626202659,Critical,international,0
+TX0038249,2026-06-20 23:53:00,ON,Point of sale,Other,Small business,2489.89,0.9664966817632911,Critical,"high amount, unusual hour",0
+TX0053672,2026-02-08 01:36:00,ON,Point of sale,Grocery,Small business,1691.74,0.9664785114868452,Critical,"high amount, unusual hour",0
+TX0059005,2026-08-07 02:12:00,ON,E-commerce,Grocery,Affluent,530.72,0.9663913441713007,Critical,"international, high amount, unusual hour",0
+TX0015294,2026-05-18 12:13:00,BC,Mobile wallet,Electronics,Everyday,153.05,0.9663440738997262,Critical,"international, low device trust, high velocity",1
+TX0052311,2026-07-14 05:16:00,AB,E-commerce,Fuel,Affluent,98.23,0.96616191879905,Critical,"international, low device trust",0
+TX0032680,2026-03-01 11:26:00,QC,E-commerce,Digital services,Student,160.75,0.9661612938382707,Critical,international,0
+TX0035728,2026-04-13 22:12:00,QC,E-commerce,Grocery,Student,557.62,0.9659924701171724,Critical,"international, high amount",0
+TX0016795,2026-01-30 18:56:00,QC,Point of sale,Travel,New-to-bank,1325.45,0.9657544613410548,Critical,"international, high amount",0
+TX0019304,2026-08-17 01:07:00,ON,E-commerce,Travel,Student,1017.88,0.9656280437834468,Critical,"high amount, unusual hour",0
+TX0018458,2026-02-21 05:29:00,QC,E-commerce,Travel,Everyday,1133.32,0.9654037124235272,Critical,high amount,0
+TX0026150,2026-02-14 19:30:00,QC,E-commerce,Digital services,Affluent,566.2,0.9653947418706351,Critical,"international, high amount",0
+TX0002432,2026-02-23 21:30:00,AB,E-commerce,Digital services,Affluent,938.83,0.9650595364551933,Critical,"high velocity, high amount",0
+TX0036445,2026-05-04 09:13:00,QC,E-commerce,Travel,Student,473.56,0.964944663650179,Critical,international,0
+TX0008649,2026-05-17 01:07:00,MB,E-commerce,Dining,Affluent,391.82,0.9647715606748855,Critical,"international, unusual hour",0
+TX0049391,2026-07-17 03:25:00,QC,Point of sale,Digital services,Student,1392.26,0.9646538613302853,Critical,"high amount, unusual hour",0
+TX0045450,2026-04-28 02:24:00,ON,E-commerce,Other,Everyday,214.73,0.9645261181616491,Critical,"international, unusual hour",1
+TX0009295,2026-04-28 19:37:00,NS,E-commerce,Electronics,Everyday,485.25,0.9643504708158633,Critical,international,1
+TX0041055,2026-07-01 03:34:00,QC,ATM,Travel,Everyday,1006.86,0.9643325458954045,Critical,"international, high amount, unusual hour",0
+TX0033219,2026-08-09 09:53:00,ON,Mobile wallet,Travel,New-to-bank,948.95,0.9642471954673062,Critical,"international, high amount",1
+TX0048969,2026-07-21 15:58:00,QC,E-commerce,Travel,New-to-bank,1218.02,0.9641031322627821,Critical,high amount,0
+TX0039797,2026-04-05 02:52:00,ON,Point of sale,Electronics,Affluent,632.08,0.9640631214787235,Critical,"international, high amount, unusual hour",0
+TX0009961,2026-03-06 16:55:00,BC,E-commerce,Electronics,Student,477.29,0.9640076646309257,Critical,international,0
+TX0010373,2026-07-17 04:03:00,QC,E-commerce,Electronics,New-to-bank,189.82,0.9636775955125346,Critical,"international, unusual hour",1
+TX0034146,2026-07-14 15:02:00,QC,E-commerce,Other,Everyday,1153.97,0.9633581835916,Critical,"high velocity, high amount",0
+TX0020731,2026-08-19 08:16:00,QC,Point of sale,Digital services,Everyday,794.03,0.9633299297325687,Critical,"international, high amount",0
+TX0017309,2026-01-16 06:21:00,ON,ATM,Electronics,New-to-bank,1598.34,0.9633133629866956,Critical,high amount,0
+TX0051117,2026-03-03 18:48:00,BC,Mobile wallet,Digital services,Everyday,1681.84,0.9632755100680888,Critical,high amount,0
+TX0037941,2026-08-06 03:46:00,QC,Mobile wallet,Digital services,Everyday,459.11,0.9631937392757084,Critical,"international, unusual hour",1
+TX0024444,2026-02-16 18:34:00,ON,E-commerce,Cash,Everyday,673.22,0.9630958373820444,Critical,"international, high amount",0
+TX0056324,2026-02-15 19:57:00,ON,E-commerce,Other,Affluent,135.57,0.9630696899070323,Critical,international,1
+TX0007515,2026-04-20 07:56:00,AB,E-commerce,Fuel,Affluent,418.66,0.963065018243985,Critical,international,0
+TX0037959,2026-03-17 04:42:00,MB,Recurring,Fuel,Everyday,1510.8,0.962809106379721,Critical,"high amount, unusual hour",0
+TX0023305,2026-04-12 06:55:00,ON,E-commerce,Grocery,Everyday,544.56,0.9627893912023476,Critical,"international, high amount",0
+TX0041959,2026-05-04 19:10:00,ON,Point of sale,Grocery,Student,1962.39,0.962697800486559,Critical,high amount,0
+TX0033285,2026-06-22 19:09:00,QC,Point of sale,Digital services,Affluent,1144.68,0.9626068153929324,Critical,"international, high amount",0
+TX0049172,2026-01-16 08:12:00,ON,E-commerce,Cash,Affluent,324.77,0.9620421786071989,Critical,international,0
+TX0010897,2026-04-02 08:59:00,QC,E-commerce,Travel,Everyday,943.88,0.961780505611952,Critical,"international, high amount",0
+TX0052516,2026-05-20 14:04:00,QC,Point of sale,Electronics,Affluent,674.91,0.9617626772937804,Critical,"international, high amount",0
+TX0030450,2026-07-29 07:17:00,ON,E-commerce,Other,New-to-bank,1040.41,0.9617584569296583,Critical,"low device trust, high amount",0
+TX0012223,2026-04-18 05:42:00,BC,E-commerce,Travel,Student,884.8,0.9617146680127008,Critical,"high velocity, high amount",0
+TX0015666,2026-01-30 09:09:00,ON,E-commerce,Other,Affluent,564.23,0.9616943564651115,Critical,"international, high amount",0
+TX0046184,2026-02-11 04:46:00,BC,E-commerce,Electronics,Affluent,30.05,0.9616728808410726,Critical,"international, unusual hour",0
+TX0000491,2026-05-11 00:47:00,ON,E-commerce,Electronics,Student,228.8,0.9616246536163047,Critical,"international, unusual hour",0
+TX0005634,2026-07-28 00:53:00,ON,E-commerce,Dining,Small business,176.22,0.9615956927079997,Critical,"international, unusual hour",1
+TX0013985,2026-07-12 00:26:00,ON,E-commerce,Digital services,Affluent,84.07,0.9613763939613172,Critical,"international, unusual hour",0
+TX0024552,2026-07-25 06:20:00,ON,E-commerce,Other,Everyday,153.39,0.9612874011912651,Critical,international,0
+TX0045516,2026-02-16 06:25:00,ON,E-commerce,Electronics,New-to-bank,74.71,0.9612730819192286,Critical,international,0
+TX0007146,2026-06-02 07:05:00,ON,E-commerce,Grocery,Small business,27.6,0.9611585383964252,Critical,"international, high velocity",0
+TX0034757,2026-06-16 16:06:00,QC,E-commerce,Digital services,Student,1051.19,0.9611490616865243,Critical,high amount,0
+TX0034132,2026-08-13 13:25:00,AB,E-commerce,Digital services,Everyday,118.84,0.9608760218739768,Critical,international,0
+TX0015517,2026-02-01 12:27:00,AB,E-commerce,Other,Everyday,357.76,0.9608138069130594,Critical,international,0
+TX0042368,2026-01-04 09:17:00,ON,E-commerce,Electronics,Everyday,1172.76,0.9607661951167782,Critical,high amount,0
+TX0010396,2026-08-08 00:07:00,QC,Mobile wallet,Travel,Everyday,660.57,0.9606823844057638,Critical,"international, high amount, unusual hour",1
+TX0036833,2026-01-06 09:51:00,QC,E-commerce,Travel,Everyday,251.09,0.9603359767048546,Critical,international,0
+TX0012648,2026-02-08 03:41:00,ON,E-commerce,Electronics,Everyday,1406.02,0.9603325727425644,Critical,"high amount, unusual hour",0
+TX0031410,2026-01-31 07:54:00,QC,E-commerce,Travel,Small business,178.43,0.9601797500950907,Critical,"international, distance anomaly",0
+TX0019003,2026-05-18 04:31:00,BC,Point of sale,Travel,Small business,1041.96,0.9598577370961306,Critical,"international, high amount, unusual hour",0
+TX0032115,2026-05-20 08:15:00,ON,E-commerce,Electronics,Everyday,639.93,0.9595668333582874,Critical,"low device trust, high amount",0
+TX0016115,2026-08-14 16:10:00,ON,E-commerce,Travel,Affluent,1179.65,0.9594566813709193,Critical,high amount,0
+TX0019081,2026-02-08 07:38:00,ON,E-commerce,Travel,Student,171.5,0.959264102011103,Critical,international,0
+TX0031406,2026-01-02 03:54:00,BC,E-commerce,Travel,New-to-bank,502.27,0.9591036674941891,Critical,"international, high amount, unusual hour",0
+TX0017834,2026-06-11 15:09:00,ON,Point of sale,Travel,Everyday,1339.51,0.9590385454442318,Critical,"international, high amount",0
+TX0016785,2026-06-27 04:11:00,AB,Point of sale,Electronics,Small business,1756.61,0.9589653444816197,Critical,"high amount, unusual hour",0
+TX0053935,2026-04-19 13:49:00,AB,E-commerce,Other,Student,6.17,0.9589629717557085,Critical,international,0
+TX0019679,2026-06-13 01:44:00,ON,E-commerce,Fuel,Small business,1364.44,0.9588461402793426,Critical,"high amount, unusual hour",0
+TX0006797,2026-08-14 00:08:00,AB,E-commerce,Travel,Student,277.85,0.9587793151455505,Critical,"international, unusual hour, new account",1
+TX0038542,2026-02-09 12:28:00,AB,E-commerce,Dining,Affluent,346.09,0.9586922056370945,Critical,international,0
+TX0031217,2026-03-13 03:25:00,AB,E-commerce,Other,Everyday,264.68,0.9583762214996849,Critical,"international, unusual hour",0
+TX0017197,2026-03-14 01:26:00,ON,E-commerce,Grocery,Small business,362.18,0.9582943699286671,Critical,"international, unusual hour",1
+TX0018679,2026-02-19 06:05:00,QC,Mobile wallet,Dining,Everyday,922.04,0.9582618175858327,Critical,"low device trust, high velocity, high amount",0
+TX0010011,2026-01-05 11:48:00,AB,E-commerce,Other,New-to-bank,341.75,0.9580518482271584,Critical,international,0
+TX0005545,2026-02-24 00:00:00,AB,E-commerce,Dining,Everyday,615.61,0.957970922913615,Critical,"international, high amount, unusual hour",0
+TX0008198,2026-05-11 07:39:00,ON,E-commerce,Grocery,Everyday,229.05,0.9579152196496377,Critical,international,0
+TX0035014,2026-02-23 15:55:00,QC,E-commerce,Digital services,Everyday,48.34,0.9577305250496033,Critical,"international, high velocity",0
+TX0044766,2026-04-14 01:22:00,QC,E-commerce,Digital services,New-to-bank,59.35,0.9573581770431295,Critical,"international, unusual hour",0
+TX0058994,2026-08-17 08:56:00,QC,E-commerce,Other,Affluent,162.16,0.9573381090942332,Critical,international,0
+TX0009524,2026-06-08 04:51:00,AB,E-commerce,Digital services,Everyday,86.87,0.9570865999997431,Critical,"international, unusual hour",0
+TX0043755,2026-05-29 06:55:00,ON,Mobile wallet,Electronics,Affluent,268.06,0.9568405390903554,Critical,international,0
+TX0051709,2026-06-28 17:58:00,ON,ATM,Travel,Small business,1175.91,0.9567757705510271,Critical,"international, high amount",0
+TX0013236,2026-07-28 00:49:00,QC,E-commerce,Digital services,Everyday,39.05,0.9567329989779856,Critical,"international, unusual hour",1
+TX0041220,2026-07-30 20:34:00,AB,E-commerce,Digital services,Affluent,25.38,0.956646408408533,Critical,international,1
+TX0010532,2026-05-14 21:01:00,ON,E-commerce,Fuel,Everyday,542.62,0.956277416588082,Critical,"international, high amount",0
+TX0041719,2026-04-23 10:14:00,QC,E-commerce,Travel,Affluent,741.91,0.9559172711449604,Critical,"international, high amount",0
+TX0040711,2026-07-26 03:35:00,ON,Point of sale,Grocery,New-to-bank,1452.05,0.9558084637298623,Critical,"high amount, unusual hour",0
+TX0034940,2026-02-23 00:53:00,QC,E-commerce,Electronics,Affluent,245.02,0.9556317512530258,Critical,"international, unusual hour",1
+TX0049945,2026-05-18 01:38:00,NS,E-commerce,Travel,Affluent,8.23,0.9551756031253739,Critical,"international, unusual hour, distance anomaly",0
+TX0022632,2026-05-14 18:51:00,QC,E-commerce,Travel,Student,192.35,0.9550295026657615,Critical,"international, distance anomaly",1
+TX0042855,2026-01-20 08:28:00,AB,E-commerce,Digital services,Student,1051.53,0.9550139898482871,Critical,high amount,0
+TX0012533,2026-05-10 22:31:00,QC,E-commerce,Grocery,Everyday,1007.45,0.9549948431848776,Critical,high amount,0
+TX0030963,2026-01-07 20:27:00,AB,ATM,Electronics,Affluent,1412.3,0.9546026354029121,Critical,high amount,0
+TX0026356,2026-04-06 07:12:00,ON,E-commerce,Dining,Affluent,98.43,0.9543645547594646,Critical,"international, low device trust",0
+TX0015621,2026-03-26 00:00:00,QC,E-commerce,Digital services,Affluent,27.76,0.9543500732183795,Critical,"international, unusual hour",0
+TX0033218,2026-04-23 14:11:00,BC,E-commerce,Dining,Student,238.74,0.9541169580011635,Critical,international,0
+TX0052283,2026-02-13 00:55:00,QC,Point of sale,Dining,Everyday,820.03,0.9535602102208877,Critical,"international, high amount, unusual hour",0
+TX0057711,2026-04-25 05:06:00,QC,E-commerce,Digital services,Affluent,176.62,0.9532737287572404,Critical,international,0
+TX0003768,2026-05-30 01:22:00,AB,E-commerce,Grocery,Affluent,539.87,0.9531329321878794,Critical,"low device trust, high velocity, high amount",0
+TX0054379,2026-06-14 09:31:00,ON,E-commerce,Fuel,Everyday,340.54,0.9530546299882774,Critical,"international, low device trust",1
+TX0000832,2026-03-24 09:36:00,BC,E-commerce,Electronics,Student,413.21,0.9530476177950585,Critical,international,0
+TX0036691,2026-05-10 06:35:00,QC,E-commerce,Digital services,Everyday,59.95,0.9529774298960935,Critical,international,0
+TX0015084,2026-02-11 00:33:00,QC,E-commerce,Cash,Student,1221.29,0.9528693190247113,Critical,"high amount, unusual hour",0
+TX0006096,2026-02-03 15:34:00,ON,E-commerce,Travel,New-to-bank,565.09,0.9527545150103914,Critical,"international, high amount",0
+TX0044182,2026-02-04 18:05:00,BC,E-commerce,Digital services,Everyday,149.83,0.952459410154482,Critical,international,0
+TX0055059,2026-04-24 06:18:00,ON,E-commerce,Dining,Small business,210.75,0.9524097035326942,Critical,"international, high velocity",0
+TX0028402,2026-05-25 18:50:00,SK,E-commerce,Electronics,Everyday,353.1,0.9523907836039048,Critical,international,0
+TX0039312,2026-04-04 12:10:00,QC,E-commerce,Electronics,New-to-bank,377.31,0.951986025372115,Critical,international,0
+TX0056432,2026-01-31 13:00:00,QC,E-commerce,Other,Small business,1235.79,0.9518802987907714,Critical,high amount,0
+TX0006101,2026-07-24 00:30:00,BC,Point of sale,Electronics,Everyday,967.96,0.9517031335602961,Critical,"low device trust, high velocity, high amount",0
+TX0012906,2026-07-30 20:49:00,ON,E-commerce,Dining,Everyday,565.09,0.9513637977793817,Critical,"international, high amount",0
+TX0044844,2026-08-09 14:10:00,ON,E-commerce,Electronics,Student,1114.33,0.9513594396693332,Critical,high amount,0
+TX0029494,2026-07-24 01:07:00,AB,E-commerce,Grocery,Everyday,154.79,0.9513288990769514,Critical,"international, unusual hour",0
+TX0029749,2026-01-01 22:34:00,BC,E-commerce,Travel,Everyday,459.1,0.9512489151350014,Critical,"international, distance anomaly",0
+TX0006527,2026-06-17 01:49:00,QC,E-commerce,Travel,Affluent,320.34,0.9512179771675776,Critical,"international, unusual hour",0
+TX0027006,2026-08-08 14:18:00,BC,E-commerce,Travel,Small business,587.42,0.9510744384592562,Critical,"international, high amount",1
+TX0057365,2026-06-12 13:11:00,AB,E-commerce,Grocery,Everyday,10.76,0.950950100570587,Critical,international,0
+TX0055631,2026-02-01 18:14:00,ON,Point of sale,Electronics,Affluent,827.63,0.950910818864272,Critical,"international, high amount",0
+TX0007823,2026-04-07 05:33:00,ON,Mobile wallet,Dining,Small business,413.13,0.9507754471617987,Critical,"international, high velocity",0
+TX0031730,2026-04-05 11:07:00,ON,Recurring,Electronics,Everyday,1048.32,0.9504696973623911,Critical,"international, high amount",0
+TX0021540,2026-03-22 18:11:00,ON,E-commerce,Travel,Everyday,145.26,0.9504486808321941,Critical,"international, low device trust",0
+TX0034754,2026-07-29 01:17:00,QC,E-commerce,Travel,Student,229.79,0.9501154198718973,Critical,"international, unusual hour",0
+TX0055153,2026-05-06 03:31:00,QC,Point of sale,Electronics,New-to-bank,443.27,0.9500770905167659,Critical,"international, low device trust, unusual hour",1
+TX0017503,2026-06-28 08:49:00,QC,E-commerce,Travel,Affluent,298.99,0.9497390857105116,Critical,international,1
+TX0032831,2026-06-18 19:29:00,QC,Point of sale,Travel,Student,613.35,0.9496085179093261,Critical,"international, low device trust, high amount",0
+TX0020196,2026-06-11 17:47:00,ON,E-commerce,Electronics,Student,1038.6,0.9495027353085018,Critical,high amount,0
+TX0006457,2026-01-29 18:17:00,ON,E-commerce,Other,Everyday,89.02,0.9493365132524821,Critical,"international, low device trust",1
+TX0040449,2026-08-21 18:41:00,ON,E-commerce,Other,Everyday,334.35,0.9493206450077698,Critical,international,0
+TX0039160,2026-06-21 06:30:00,BC,E-commerce,Travel,Everyday,821.01,0.9493130650992578,Critical,"high velocity, high amount",0
+TX0004275,2026-07-05 09:39:00,ON,E-commerce,Fuel,Everyday,10.37,0.9492741333962738,Critical,"international, low device trust",0
+TX0000367,2026-06-28 11:26:00,ON,E-commerce,Dining,Small business,68.24,0.9488560628088285,Critical,"international, distance anomaly",0
+TX0029240,2026-06-25 04:49:00,ON,E-commerce,Travel,Student,188.36,0.9484914782323066,Critical,"international, unusual hour",1
+TX0018367,2026-04-06 05:45:00,MB,ATM,Fuel,Everyday,1177.14,0.9484357148449466,Critical,"international, high amount",0
+TX0021097,2026-08-10 16:01:00,MB,E-commerce,Grocery,Everyday,319.63,0.9483520145537349,Critical,international,0
+TX0013641,2026-07-01 21:59:00,AB,E-commerce,Digital services,Small business,484.73,0.9483046933797654,Critical,international,0
+TX0031556,2026-04-22 05:16:00,ON,E-commerce,Electronics,Student,69.04,0.9481409424591452,Critical,international,1
+TX0000009,2026-08-07 14:24:00,BC,Mobile wallet,Other,Everyday,621.69,0.947974090578855,Critical,"international, high amount",0
+TX0020601,2026-07-17 06:36:00,MB,E-commerce,Other,Affluent,542.21,0.9479506623472236,Critical,"international, high amount",0
+TX0039607,2026-02-22 02:52:00,ON,E-commerce,Electronics,Student,86.32,0.9479283385141285,Critical,"international, unusual hour",0
+TX0058058,2026-06-13 06:36:00,ON,E-commerce,Digital services,Affluent,115.97,0.9478511900026203,Critical,international,0
+TX0024312,2026-07-28 04:53:00,ON,ATM,Dining,Student,592.85,0.9477258930613036,Critical,"international, high velocity, high amount",0
+TX0019613,2026-08-10 02:48:00,ON,ATM,Dining,Affluent,210.98,0.9475336636143051,Critical,"international, low device trust, unusual hour",1
+TX0013164,2026-05-28 10:55:00,NS,E-commerce,Cash,Small business,395.97,0.9474260198617868,Critical,international,0
+TX0057887,2026-04-06 23:38:00,AB,E-commerce,Electronics,Affluent,721.81,0.9473021424118285,Critical,"high amount, unusual hour",0
+TX0005225,2026-04-15 07:15:00,ON,E-commerce,Digital services,Small business,184.45,0.9472537214091622,Critical,international,0
+TX0056343,2026-01-10 01:49:00,ON,ATM,Electronics,Small business,537.72,0.9470828497286298,Critical,"international, high amount, unusual hour",1
+TX0051136,2026-05-29 15:16:00,QC,E-commerce,Travel,Everyday,497.53,0.9470102097956613,Critical,international,1
+TX0014662,2026-03-21 23:40:00,AB,E-commerce,Other,Everyday,130.39,0.947005996806124,Critical,"international, low device trust, unusual hour",1
+TX0056400,2026-03-12 05:28:00,AB,E-commerce,Digital services,Affluent,8.0,0.9469969674844497,Critical,international,0
+TX0019592,2026-07-06 11:20:00,QC,E-commerce,Travel,Affluent,118.26,0.9468473715787077,Critical,international,0
+TX0002232,2026-04-01 00:19:00,BC,Point of sale,Electronics,Everyday,1038.92,0.9467583316338826,Critical,"low device trust, high amount, unusual hour",0
+TX0032287,2026-04-10 02:48:00,ON,E-commerce,Electronics,Everyday,105.84,0.9467574684509898,Critical,"international, unusual hour",0
+TX0027915,2026-02-28 22:10:00,ON,Point of sale,Travel,Everyday,1369.71,0.9466239052016945,Critical,"international, high amount",0
+TX0002214,2026-03-15 15:47:00,ON,Point of sale,Electronics,Everyday,644.89,0.9466005442470669,Critical,"international, high amount",0
+TX0042125,2026-07-20 04:14:00,QC,Mobile wallet,Other,Everyday,560.6,0.9465457668923343,Critical,"international, high amount, unusual hour",1
+TX0009717,2026-03-14 11:24:00,ON,E-commerce,Travel,Everyday,119.06,0.9465179313068667,Critical,international,0
+TX0036012,2026-07-05 04:48:00,ON,E-commerce,Electronics,Small business,424.7,0.9464913487150858,Critical,"international, unusual hour",0
+TX0027142,2026-07-08 13:56:00,QC,E-commerce,Grocery,Affluent,23.49,0.9463398111503665,Critical,international,0
+TX0052857,2026-08-12 03:02:00,ON,Mobile wallet,Electronics,Everyday,41.33,0.9461764678934873,Critical,"international, unusual hour, distance anomaly",0
+TX0057772,2026-04-30 13:30:00,ON,E-commerce,Fuel,Affluent,581.81,0.9460407021207093,Critical,"international, high amount",1
+TX0036926,2026-03-16 05:50:00,QC,E-commerce,Electronics,Student,213.31,0.9459260620653911,Critical,international,0
+TX0015643,2026-01-01 12:26:00,AB,Mobile wallet,Electronics,Everyday,1272.21,0.9456185360050675,Critical,high amount,0
+TX0040344,2026-07-09 09:51:00,QC,Recurring,Travel,Everyday,130.5,0.9456158669193385,Critical,"international, low device trust, high velocity",1
+TX0010518,2026-06-18 05:42:00,QC,E-commerce,Travel,New-to-bank,202.09,0.9454556337060913,Critical,international,0
+TX0008283,2026-05-20 09:55:00,QC,E-commerce,Other,New-to-bank,826.6,0.9453268306157446,Critical,high amount,0
+TX0028435,2026-07-14 03:39:00,ON,E-commerce,Travel,Everyday,409.09,0.9452364548841671,Critical,"international, unusual hour",0
+TX0038736,2026-02-19 05:53:00,BC,E-commerce,Digital services,New-to-bank,61.95,0.94513770553185,Critical,international,0
+TX0048634,2026-06-08 00:45:00,BC,Point of sale,Electronics,Affluent,832.71,0.9451141414835154,Critical,"international, high amount, unusual hour",0
+TX0025563,2026-01-04 11:22:00,BC,E-commerce,Cash,Affluent,399.62,0.9451087310579716,Critical,international,0
+TX0015266,2026-03-24 10:22:00,ON,Recurring,Travel,Everyday,1092.98,0.9448679428600507,Critical,"international, high amount",0
+TX0036869,2026-06-18 17:56:00,QC,E-commerce,Electronics,Everyday,477.61,0.9446576058926462,Critical,international,0
+TX0014894,2026-08-18 16:32:00,AB,E-commerce,Electronics,New-to-bank,267.29,0.9445817995321254,Critical,international,1
+TX0029071,2026-03-24 14:05:00,AB,E-commerce,Dining,Student,308.87,0.9445332169324253,Critical,international,1
+TX0009404,2026-07-05 08:43:00,QC,E-commerce,Travel,Student,70.59,0.944505862552538,Critical,international,0
+TX0005088,2026-01-12 13:13:00,QC,E-commerce,Digital services,Student,122.34,0.9443760198492476,Critical,international,0
+TX0048257,2026-06-09 04:18:00,QC,E-commerce,Grocery,Affluent,39.97,0.9443175915917615,Critical,"international, low device trust, unusual hour",1
+TX0059075,2026-07-10 16:27:00,ON,E-commerce,Travel,Small business,145.56,0.9443045184677173,Critical,international,0
+TX0010417,2026-08-16 23:04:00,ON,Point of sale,Travel,Everyday,704.62,0.9441750708112356,Critical,"international, high amount, unusual hour",0
+TX0006917,2026-03-20 01:56:00,ON,E-commerce,Digital services,Affluent,25.38,0.9439740980840982,Critical,"international, unusual hour",0
+TX0023784,2026-01-23 08:15:00,MB,E-commerce,Digital services,Everyday,257.0,0.9439671267213847,Critical,international,0
+TX0010744,2026-04-26 05:05:00,MB,E-commerce,Fuel,Student,165.57,0.9437826481933607,Critical,international,0
+TX0023103,2026-04-30 10:58:00,ON,Mobile wallet,Digital services,New-to-bank,1005.11,0.9437135443966129,Critical,"low device trust, high amount",0
+TX0002652,2026-07-02 02:37:00,QC,E-commerce,Electronics,Everyday,917.96,0.9433816497140343,Critical,"high amount, unusual hour",0
+TX0042050,2026-02-05 03:12:00,BC,E-commerce,Travel,Student,164.24,0.9431149879354045,Critical,"international, unusual hour",0
+TX0001643,2026-06-30 09:08:00,ON,E-commerce,Dining,Everyday,46.43,0.9429856312296606,Critical,international,0
+TX0051855,2026-01-25 17:30:00,ON,E-commerce,Electronics,Small business,797.54,0.9426255201247494,Critical,high amount,0
+TX0001757,2026-05-06 06:21:00,ON,Recurring,Travel,Student,1147.54,0.9425727431143227,Critical,"international, high amount",0
+TX0034829,2026-02-17 17:51:00,MB,E-commerce,Electronics,Student,1009.63,0.9424033643407604,Critical,high amount,0
+TX0034289,2026-05-12 06:34:00,AB,E-commerce,Cash,Affluent,101.23,0.9420234433242732,Critical,international,0
+TX0054085,2026-03-31 05:40:00,BC,E-commerce,Cash,Student,49.71,0.9420050902004085,Critical,"international, high velocity",1
+TX0010334,2026-03-06 21:59:00,ON,E-commerce,Electronics,Affluent,485.56,0.9419288343077263,Critical,low device trust,0
+TX0003052,2026-01-22 12:06:00,AB,E-commerce,Electronics,Student,88.78,0.9419041732944509,Critical,international,0
+TX0021364,2026-05-26 16:35:00,AB,Mobile wallet,Cash,Everyday,1155.26,0.9418121644794891,Critical,high amount,0
+TX0049665,2026-08-12 15:28:00,ON,E-commerce,Travel,Everyday,314.42,0.9417665127146777,Critical,international,0
+TX0058797,2026-08-16 13:52:00,BC,Mobile wallet,Digital services,Everyday,42.19,0.9417183590986585,Critical,"international, high velocity",0
+TX0053111,2026-05-25 05:17:00,QC,ATM,Travel,Affluent,276.2,0.9416057349196573,Critical,"international, distance anomaly",0
+TX0058710,2026-01-30 04:05:00,NS,E-commerce,Fuel,Affluent,727.06,0.9415421541708835,Critical,"high velocity, high amount, unusual hour",0
+TX0024273,2026-04-16 01:10:00,NS,E-commerce,Dining,Small business,188.54,0.9415111510739879,Critical,"international, unusual hour, distance anomaly",0
+TX0025031,2026-08-14 23:33:00,BC,ATM,Digital services,Small business,968.56,0.9414355612449844,Critical,"international, high amount, unusual hour",0
+TX0022873,2026-06-27 01:00:00,QC,E-commerce,Other,New-to-bank,250.4,0.9414298285972461,Critical,"international, unusual hour",0
+TX0052868,2026-06-16 04:22:00,BC,E-commerce,Electronics,Everyday,266.44,0.9414067851417748,Critical,"international, unusual hour",0
+TX0001228,2026-03-01 22:40:00,MB,E-commerce,Grocery,Everyday,61.14,0.9413840970987446,Critical,"international, high velocity",0
+TX0025684,2026-04-15 16:25:00,BC,E-commerce,Other,New-to-bank,1173.73,0.9412727285338208,Critical,high amount,0
+TX0030716,2026-07-12 16:00:00,ON,E-commerce,Other,Everyday,20.6,0.941269955968858,Critical,"international, low device trust",0
+TX0016875,2026-08-10 05:30:00,NS,E-commerce,Travel,New-to-bank,286.93,0.9412476468742735,Critical,international,0
+TX0058231,2026-02-13 01:59:00,ON,E-commerce,Electronics,Everyday,696.69,0.9411852909104029,Critical,"high amount, unusual hour",0
+TX0051163,2026-03-06 02:16:00,ON,E-commerce,Grocery,Everyday,37.63,0.941075944326112,Critical,"international, unusual hour",0
+TX0035851,2026-03-18 12:48:00,QC,E-commerce,Digital services,Student,143.51,0.9410185442946131,Critical,international,0
+TX0017758,2026-06-30 15:02:00,AB,E-commerce,Other,Student,240.37,0.9409155256032357,Critical,"international, high velocity",0
+TX0045162,2026-01-25 03:13:00,ON,E-commerce,Digital services,Everyday,19.62,0.9408386977448001,Critical,"international, unusual hour",0
+TX0009798,2026-06-22 08:22:00,ON,E-commerce,Digital services,Everyday,976.91,0.9407739130449135,Critical,high amount,0
+TX0029056,2026-03-28 06:01:00,MB,E-commerce,Grocery,New-to-bank,467.7,0.9406297525143844,Critical,"international, distance anomaly",1
+TX0046397,2026-04-05 04:52:00,ON,E-commerce,Dining,Affluent,124.14,0.940563692730005,Critical,"international, unusual hour",0
+TX0017075,2026-04-06 03:02:00,AB,E-commerce,Travel,Student,1342.84,0.9405236650113401,Critical,"high amount, unusual hour",0
+TX0035696,2026-06-30 08:08:00,ON,Point of sale,Travel,Affluent,1554.02,0.9404456850676147,Critical,high amount,0
+TX0040591,2026-04-07 00:07:00,QC,E-commerce,Digital services,Affluent,868.61,0.940373261965267,Critical,"high amount, unusual hour",0
+TX0037683,2026-04-06 01:20:00,SK,E-commerce,Other,Everyday,148.73,0.9403677895780004,Critical,"international, unusual hour",0
+TX0022982,2026-06-25 09:49:00,ON,E-commerce,Dining,Everyday,100.19,0.9402139027627033,Critical,"international, low device trust",0
+TX0055384,2026-07-06 12:41:00,ON,Mobile wallet,Electronics,Everyday,1493.57,0.9401399758081551,Critical,high amount,0
+TX0035775,2026-02-18 19:46:00,QC,E-commerce,Grocery,Affluent,16.17,0.9399647030873778,Critical,international,1
+TX0032840,2026-06-07 03:52:00,AB,E-commerce,Grocery,Everyday,3.71,0.9399196162890018,Critical,"international, unusual hour",0
+TX0013544,2026-04-22 10:07:00,AB,E-commerce,Electronics,Student,202.2,0.9398617432953013,Critical,international,0
+TX0037570,2026-03-02 12:00:00,ON,E-commerce,Dining,Affluent,17.71,0.9397793439950852,Critical,international,0
+TX0005501,2026-03-23 04:43:00,ON,E-commerce,Electronics,Small business,264.85,0.9395804539304831,Critical,"international, unusual hour",0
+TX0053543,2026-03-01 07:55:00,ON,E-commerce,Electronics,Everyday,200.99,0.9394599046632078,Critical,international,1
+TX0043345,2026-03-30 00:32:00,QC,E-commerce,Digital services,Everyday,63.39,0.9392722145396459,Critical,"international, unusual hour",0
+TX0011512,2026-04-28 00:51:00,QC,Mobile wallet,Other,New-to-bank,129.91,0.9392338648814221,Critical,"international, unusual hour",1
+TX0009960,2026-01-29 05:47:00,QC,E-commerce,Digital services,Everyday,973.33,0.9391599892775526,Critical,high amount,0
+TX0039398,2026-07-15 06:19:00,SK,Point of sale,Travel,Everyday,738.19,0.9390633577210361,Critical,"international, high amount",0
+TX0008166,2026-04-29 20:13:00,QC,ATM,Cash,Student,1645.54,0.9390068157258569,Critical,high amount,0
+TX0004518,2026-07-09 05:57:00,QC,Mobile wallet,Digital services,Small business,68.9,0.9389042429298919,Critical,international,1
+TX0036066,2026-04-16 02:02:00,QC,E-commerce,Grocery,Everyday,198.51,0.9387011151513879,Critical,"international, unusual hour",0
+TX0039362,2026-04-20 21:24:00,QC,E-commerce,Digital services,Small business,89.17,0.938554631990539,Critical,"international, distance anomaly",0
+TX0053489,2026-06-25 03:39:00,MB,Point of sale,Travel,Everyday,1045.76,0.9385376497667415,Critical,"international, high amount, unusual hour",0
+TX0053925,2026-03-28 14:54:00,SK,E-commerce,Digital services,Student,208.11,0.9385035675457534,Critical,international,0
+TX0049768,2026-05-08 05:41:00,ON,E-commerce,Dining,Affluent,376.97,0.938410132523583,Critical,international,1
+TX0014432,2026-01-12 20:54:00,ON,E-commerce,Travel,Small business,660.78,0.9382861860689573,Critical,"international, high amount",0
+TX0011604,2026-06-04 01:05:00,BC,E-commerce,Cash,Everyday,1323.61,0.9382839219753045,Critical,"high amount, unusual hour",0
+TX0041381,2026-08-06 11:49:00,SK,Point of sale,Grocery,Affluent,1305.46,0.9382598555587619,Critical,"high velocity, high amount",0
+TX0035968,2026-03-10 08:25:00,QC,E-commerce,Grocery,Affluent,556.87,0.938247159744199,Critical,"high amount, distance anomaly",0
+TX0059170,2026-01-24 08:24:00,ON,E-commerce,Fuel,Everyday,151.26,0.9382222942068316,Critical,international,0
+TX0034388,2026-01-27 00:49:00,QC,E-commerce,Electronics,Affluent,657.3,0.9382104729752719,Critical,"high amount, unusual hour",0
+TX0028577,2026-03-31 05:55:00,QC,E-commerce,Digital services,Small business,29.48,0.9380215079086549,Critical,international,0
+TX0046928,2026-04-22 13:31:00,ON,Point of sale,Electronics,Student,1609.28,0.9379746966446805,Critical,high amount,0
+TX0052245,2026-01-10 04:22:00,ON,E-commerce,Other,Student,249.17,0.9379554100326281,Critical,"international, unusual hour",0
+TX0041851,2026-01-12 03:56:00,ON,Point of sale,Cash,Affluent,750.34,0.9379375087563024,Critical,"international, high amount, unusual hour",0
+TX0039338,2026-07-07 18:55:00,BC,Mobile wallet,Grocery,Everyday,235.14,0.9378020380247923,Critical,"international, distance anomaly",0
+TX0010601,2026-04-09 14:55:00,BC,E-commerce,Fuel,Everyday,502.74,0.9376894956668496,Critical,"international, high amount",1
+TX0055158,2026-02-13 01:23:00,BC,E-commerce,Cash,Affluent,126.72,0.9376449425862629,Critical,"international, unusual hour",0
+TX0034370,2026-03-19 05:35:00,ON,E-commerce,Travel,Affluent,409.21,0.9376311165914635,Critical,international,0
+TX0013563,2026-03-19 01:43:00,ON,E-commerce,Travel,Student,259.1,0.937527403993378,Critical,"international, unusual hour",1
+TX0026608,2026-07-28 21:57:00,ON,ATM,Travel,Affluent,1942.84,0.9374763423715459,Critical,high amount,0
+TX0038737,2026-06-20 23:33:00,AB,Mobile wallet,Electronics,Everyday,1028.35,0.9374667244514819,Critical,"high amount, unusual hour",0
+TX0022169,2026-06-01 00:17:00,ON,E-commerce,Fuel,Everyday,15.36,0.9374652458320947,Critical,"international, low device trust, unusual hour",0
+TX0015195,2026-02-02 03:46:00,QC,E-commerce,Other,Everyday,245.45,0.9373579246358131,Critical,"international, unusual hour",0
+TX0010422,2026-04-07 20:45:00,BC,Mobile wallet,Fuel,Everyday,1488.63,0.9372864559302098,Critical,high amount,0
+TX0037207,2026-06-19 00:28:00,AB,E-commerce,Fuel,Small business,649.96,0.9370935317557517,Critical,"high velocity, high amount, unusual hour",0
+TX0029552,2026-05-18 01:26:00,BC,Mobile wallet,Grocery,Affluent,123.7,0.9370401246926923,Critical,"international, unusual hour",0
+TX0005521,2026-03-19 01:37:00,QC,E-commerce,Fuel,Student,343.51,0.9370031222491667,Critical,"international, unusual hour",0
+TX0029037,2026-08-20 00:29:00,MB,E-commerce,Digital services,Everyday,21.96,0.9369213299074078,Critical,"international, unusual hour",0
+TX0056357,2026-02-04 00:16:00,QC,Mobile wallet,Digital services,Student,92.65,0.936849698871438,Critical,"international, unusual hour",0
+TX0031508,2026-04-18 22:32:00,AB,E-commerce,Travel,Affluent,272.21,0.936752793999951,Critical,international,0
+TX0039459,2026-02-09 11:09:00,ON,E-commerce,Dining,Everyday,13.37,0.9367218989930804,Critical,"international, low device trust",0
+TX0029560,2026-03-28 01:13:00,QC,E-commerce,Travel,Everyday,343.41,0.9365964354141955,Critical,"international, unusual hour",0
+TX0017288,2026-08-12 04:40:00,QC,E-commerce,Dining,Affluent,268.72,0.9365487920024536,Critical,"international, unusual hour",0
+TX0026216,2026-03-23 19:57:00,ON,E-commerce,Travel,Everyday,452.02,0.9365431421952798,Critical,international,0
+TX0008613,2026-06-16 09:50:00,AB,E-commerce,Cash,Affluent,272.43,0.9364872979121112,Critical,international,0
+TX0006909,2026-08-24 01:24:00,NB,Point of sale,Travel,Everyday,911.45,0.936386710566805,Critical,"international, high amount, unusual hour",0
+TX0056756,2026-04-16 14:05:00,ON,E-commerce,Electronics,Affluent,67.97,0.9363231302826137,Critical,international,0
+TX0022951,2026-05-15 00:13:00,ON,E-commerce,Travel,Everyday,210.57,0.936183348099537,Critical,"international, unusual hour",0
+TX0044208,2026-05-12 17:51:00,ON,E-commerce,Dining,New-to-bank,39.59,0.9361576415429251,Critical,"international, low device trust",0
+TX0049591,2026-08-26 07:29:00,ON,E-commerce,Grocery,Student,89.14,0.9358605069623114,Critical,"international, low device trust",0
+TX0016058,2026-07-01 08:21:00,BC,Mobile wallet,Travel,New-to-bank,455.46,0.9358278301238891,Critical,international,0
+TX0036571,2026-05-25 00:18:00,ON,Point of sale,Electronics,Affluent,413.43,0.9357943023730412,Critical,"international, unusual hour",1
+TX0029170,2026-01-09 02:48:00,BC,E-commerce,Electronics,Everyday,774.75,0.9357556861359232,Critical,"high amount, unusual hour",0
+TX0009129,2026-07-02 20:08:00,ON,E-commerce,Electronics,Everyday,164.23,0.9357207592459325,Critical,"international, low device trust",1
+TX0058798,2026-05-25 11:02:00,QC,E-commerce,Other,New-to-bank,23.47,0.9356043932801452,Critical,international,0
+TX0013380,2026-08-19 14:36:00,QC,E-commerce,Cash,Affluent,287.7,0.9355546597612049,Critical,international,0
+TX0055720,2026-02-21 02:07:00,MB,E-commerce,Travel,New-to-bank,190.96,0.9355431461008128,Critical,"international, unusual hour",0
+TX0032337,2026-05-22 08:35:00,QC,Point of sale,Electronics,Everyday,452.86,0.9354816290568614,Critical,international,0
+TX0033870,2026-05-15 04:13:00,AB,E-commerce,Other,Everyday,126.83,0.9353784370325432,Critical,"low device trust, high velocity, unusual hour",1
+TX0039042,2026-05-05 02:49:00,MB,Mobile wallet,Digital services,Everyday,170.39,0.9353354702672868,Critical,"international, unusual hour",0
+TX0006734,2026-06-17 22:33:00,ON,E-commerce,Travel,Small business,385.61,0.9351759924368421,Critical,international,0
+TX0015531,2026-07-23 13:31:00,ON,E-commerce,Travel,Everyday,41.32,0.935109301625914,Critical,international,0
+TX0031254,2026-06-03 10:28:00,QC,Mobile wallet,Travel,Everyday,175.43,0.9350893108076958,Critical,"international, distance anomaly",0
+TX0039082,2026-02-23 14:52:00,ON,E-commerce,Travel,Everyday,217.73,0.9349367293690439,Critical,"international, high velocity",0
+TX0007583,2026-04-02 03:05:00,ON,E-commerce,Travel,Everyday,60.25,0.9349207319850428,Critical,"international, unusual hour",0
+TX0017788,2026-04-08 08:08:00,QC,E-commerce,Travel,New-to-bank,815.19,0.9348958349119627,Critical,high amount,0
+TX0007930,2026-06-20 21:09:00,ON,E-commerce,Other,Affluent,31.75,0.9346921940511865,Critical,international,0
+TX0009962,2026-02-11 14:16:00,QC,E-commerce,Fuel,Everyday,710.37,0.9346388749335326,Critical,"low device trust, high amount",0
+TX0048488,2026-01-15 21:22:00,ON,Point of sale,Electronics,Everyday,750.26,0.9344931939451869,Critical,"international, high amount",0
+TX0059859,2026-01-28 06:31:00,BC,Recurring,Travel,Everyday,291.59,0.9344603295050348,Critical,"international, high velocity",0
+TX0022428,2026-03-26 23:39:00,QC,E-commerce,Travel,Everyday,491.14,0.9342814682398559,Critical,"international, low device trust, unusual hour",0
+TX0017813,2026-08-11 14:55:00,NS,Mobile wallet,Electronics,New-to-bank,1350.92,0.9342584997170427,Critical,high amount,0
+TX0004877,2026-04-03 20:00:00,ON,ATM,Grocery,Student,668.71,0.9342002954308032,Critical,"international, high amount",0
+TX0019704,2026-01-10 03:20:00,AB,E-commerce,Travel,Affluent,200.56,0.934105129402606,Critical,"international, unusual hour",0
+TX0030517,2026-03-13 12:27:00,MB,E-commerce,Dining,Everyday,251.95,0.9340704462112643,Critical,"low device trust, high velocity, distance anomaly",1
+TX0010048,2026-03-19 20:57:00,ON,E-commerce,Travel,Everyday,610.6,0.9339905742567093,Critical,"international, high amount",0
+TX0009490,2026-08-14 00:32:00,QC,E-commerce,Other,Student,109.75,0.9339795166473506,Critical,"international, unusual hour",0
+TX0026020,2026-02-13 18:45:00,BC,E-commerce,Electronics,Small business,331.77,0.9335690464226836,Critical,international,1
+TX0033176,2026-04-28 22:59:00,ON,E-commerce,Travel,Everyday,350.1,0.9335306489606789,Critical,international,0
+TX0041134,2026-07-03 03:29:00,ON,E-commerce,Electronics,Everyday,163.81,0.9334976907171728,Critical,"international, unusual hour",0
+TX0049842,2026-06-28 08:45:00,NS,E-commerce,Fuel,Small business,80.42,0.933489243306847,Critical,international,0
+TX0041945,2026-06-22 18:33:00,MB,E-commerce,Electronics,Affluent,32.71,0.9334892360389153,Critical,international,0
+TX0018117,2026-04-12 23:17:00,ON,E-commerce,Dining,Student,103.3,0.9333320742391765,Critical,"international, unusual hour",1
+TX0046982,2026-06-28 05:50:00,AB,E-commerce,Travel,Affluent,242.37,0.9332892071597501,Critical,international,0
+TX0009907,2026-08-13 08:36:00,QC,E-commerce,Grocery,New-to-bank,147.83,0.9329878409693912,Critical,international,0
+TX0047792,2026-05-31 05:20:00,QC,Mobile wallet,Travel,New-to-bank,164.13,0.9328078240110373,Critical,"international, high velocity",0
+TX0055604,2026-07-30 06:51:00,ON,E-commerce,Other,Student,124.39,0.9326375853670905,Critical,international,0
+TX0054937,2026-01-04 12:36:00,ON,E-commerce,Dining,Everyday,81.05,0.932581384906912,Critical,international,0
+TX0014648,2026-06-22 22:20:00,QC,E-commerce,Travel,Student,1222.44,0.9324526636305066,Critical,high amount,0
+TX0035020,2026-05-21 16:54:00,ON,E-commerce,Electronics,Student,90.03,0.9324085977869871,Critical,international,0
+TX0055028,2026-06-24 04:58:00,ON,E-commerce,Travel,Everyday,202.56,0.9323547279851842,Critical,"international, unusual hour",0
+TX0054910,2026-02-06 17:41:00,ON,E-commerce,Digital services,Small business,81.31,0.9323058149801375,Critical,international,0
+TX0014237,2026-04-29 09:16:00,ON,E-commerce,Electronics,New-to-bank,909.98,0.9322804144264102,Critical,high amount,0
+TX0006914,2026-03-23 18:36:00,ON,E-commerce,Travel,Everyday,143.86,0.9321108471033582,Critical,international,1
+TX0028144,2026-06-28 06:40:00,NS,Point of sale,Travel,New-to-bank,887.78,0.9320018496434622,Critical,"international, high amount",0
+TX0032030,2026-05-23 12:49:00,ON,E-commerce,Dining,Affluent,239.98,0.9319863863148807,Critical,international,0
+TX0020201,2026-06-06 15:03:00,QC,E-commerce,Electronics,Small business,976.7,0.9319375860920804,Critical,high amount,0
+TX0039703,2026-05-18 01:58:00,AB,Point of sale,Electronics,Student,357.91,0.9319006388259489,Critical,"international, unusual hour",0
+TX0044465,2026-08-22 15:53:00,ON,E-commerce,Digital services,Everyday,68.83,0.9318376798218857,Critical,international,0
+TX0037036,2026-02-06 22:36:00,ON,E-commerce,Electronics,Small business,672.39,0.9318358348311155,Critical,"high amount, distance anomaly",0
+TX0000175,2026-02-13 00:30:00,AB,E-commerce,Other,Everyday,304.27,0.9316578195787439,Critical,"international, unusual hour",0
+TX0046674,2026-05-26 23:21:00,BC,Mobile wallet,Other,Everyday,1222.84,0.931520993570567,Critical,"high amount, unusual hour",0
+TX0012920,2026-08-10 00:22:00,QC,E-commerce,Grocery,Everyday,842.71,0.9313927926910323,Critical,"high amount, unusual hour",0
+TX0055945,2026-02-14 19:47:00,AB,E-commerce,Travel,Student,117.92,0.9313119376436633,Critical,international,0
+TX0048880,2026-04-12 00:51:00,ON,Point of sale,Other,Everyday,964.12,0.9312852806583698,Critical,"high velocity, high amount, unusual hour",1
+TX0050663,2026-04-29 10:49:00,ON,E-commerce,Other,New-to-bank,13.9,0.9312528508290356,Critical,international,0
+TX0044527,2026-05-17 07:22:00,QC,E-commerce,Other,Everyday,725.63,0.9312181573474617,Critical,high amount,1

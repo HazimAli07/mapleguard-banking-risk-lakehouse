@@ -1,0 +1,2 @@
+transactions,value_cad,alerts,alert_rate,observed_fraud_rate,average_risk_score,model_roc_auc,model_recall
+60000,7306689.9,7362,0.1227,0.012433333333333333,0.3681622970766354,0.7978713174596002,0.5420560747663551

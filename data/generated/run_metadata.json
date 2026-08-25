@@ -1,0 +1,22 @@
+{
+  "rows": 60000,
+  "seed": 2027,
+  "synthetic": true,
+  "threshold": 0.6400000000000001,
+  "train_end": "2026-05-14T04:57:43.200000",
+  "validation_end": "2026-06-16T02:26:54",
+  "metrics": {
+    "roc_auc": 0.7978713174596002,
+    "average_precision": 0.09444295486105914,
+    "precision": 0.05253623188405797,
+    "recall": 0.5420560747663551,
+    "f1": 0.0957886044591247,
+    "false_positive_rate": 0.11762060047228157,
+    "test_rows": 18000.0,
+    "test_positive_rate": 0.011888888888888888,
+    "true_positives": 116.0,
+    "false_positives": 2092.0,
+    "false_negatives": 98.0,
+    "true_negatives": 15694.0
+  }
+}

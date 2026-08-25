@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MapleGuard is Hazim Ali's privacy-safe banking risk intelligence portfolio project for Winter 2027 co-op recruiting.">
+  <title>MapleGuard | Banking Risk Intelligence by Hazim Ali</title>
+  <style>
+    :root{--ink:#07182d;--paper:#f5f3ed;--blue:#1769e0;--gold:#e6b84f;--orange:#ef8c3a;--muted:#637184;--line:rgba(7,24,45,.14)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:inherit;text-decoration:none}.shell{width:min(1180px,calc(100% - 48px));margin-inline:auto}
+    nav{height:88px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.wordmark{font-size:14px;font-weight:850;letter-spacing:.13em;display:flex;align-items:center;gap:12px}.wordmark b{display:grid;place-items:center;width:34px;height:34px;color:#fff;background:var(--ink);border-radius:50%;font-size:10px;letter-spacing:0}.nav-cta{font-size:13px;font-weight:700;border-bottom:1px solid;padding-bottom:4px}
+    .hero{padding:72px 0 86px;min-height:790px;position:relative}.eyebrow,.section-label{font-size:11px;letter-spacing:.18em;font-weight:800}.eyebrow{display:flex;align-items:center;gap:10px;color:var(--blue)}.eyebrow i{width:24px;height:2px;background:var(--blue)}h1{font-size:clamp(62px,9.5vw,126px);line-height:.84;letter-spacing:-.075em;margin:34px 0 36px;max-width:1010px}h1 em{font-family:Georgia,serif;font-weight:400;color:var(--blue)}.hero-copy{width:min(585px,100%);margin-left:9%;font-size:20px;line-height:1.6;color:var(--muted)}.hero-actions{margin:42px 0 0 9%;display:flex;align-items:center;gap:34px}.button{display:inline-flex;align-items:center;gap:38px;padding:17px 21px;color:#fff;background:var(--ink);font-size:13px;font-weight:750}.hero-actions p{font-size:12px;line-height:1.45;color:var(--muted);margin:0}.hero-actions strong{color:var(--ink)}
+    .signal{position:absolute;right:0;bottom:62px;width:430px;min-height:176px;padding:23px;color:#fff;background:var(--ink);box-shadow:0 24px 65px rgba(7,24,45,.2)}.signal-head,.signal-foot{display:flex;justify-content:space-between;align-items:center;font-size:9px;letter-spacing:.16em;font-weight:700;color:#93a7c1}.status{display:flex;gap:7px;align-items:center;color:#d8e7f7}.status i{width:7px;height:7px;background:var(--gold);border-radius:50%;box-shadow:0 0 0 5px rgba(230,184,79,.14)}.signal-line{height:84px;position:relative;margin:8px 0;overflow:hidden;border-block:1px solid rgba(255,255,255,.09);background:repeating-linear-gradient(90deg,transparent 0 79px,rgba(255,255,255,.05) 80px)}.signal-line:after{content:"";position:absolute;left:-5%;top:49%;width:110%;height:2px;background:linear-gradient(90deg,transparent,#2d7cf0 16% 25%,var(--gold) 28%,#2d7cf0 31% 54%,var(--gold) 57%,#2d7cf0 60%,transparent);transform:rotate(-2deg);box-shadow:0 0 14px rgba(45,124,240,.6)}
+    .strip{border-block:1px solid var(--line);background:rgba(255,255,255,.28)}.ticker{display:flex;justify-content:space-between;gap:28px;overflow:auto;padding-block:23px}.ticker span{white-space:nowrap;text-transform:uppercase;font-size:10px;letter-spacing:.13em;font-weight:800}.ticker span:before{content:"+";color:var(--blue);margin-right:14px}
+    section.content{padding:118px 0}.section-label{color:var(--blue)}.intro{display:grid;grid-template-columns:1.25fr .75fr;align-items:end;gap:70px;margin:30px 0 70px}.intro h2{margin:0;font-size:clamp(48px,7vw,86px);line-height:.95;letter-spacing:-.055em}.intro p{color:var(--muted);line-height:1.65;font-size:16px}.stages{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line)}.stage{min-height:245px;padding:24px;border-right:1px solid var(--line);display:flex;flex-direction:column;transition:.25s}.stage:last-child{border:0}.stage:hover{background:#fff;transform:translateY(-6px)}.stage>span{color:var(--blue);font-size:11px;font-weight:800;letter-spacing:.12em}.stage h3{margin:auto 0 14px;font-size:22px}.stage p{color:var(--muted);font-size:13px;line-height:1.55;margin:0}
+    .dark{background:var(--ink);color:#fff}.dark .section-label{color:#73a9f5}.dark .intro p{color:#a8bad0}.metrics{display:grid;grid-template-columns:repeat(4,1fr);border-block:1px solid rgba(255,255,255,.16)}.metric{padding:28px 22px;border-right:1px solid rgba(255,255,255,.16)}.metric:last-child{border:0}.metric b{display:block;font-size:42px;letter-spacing:-.05em}.metric span{font-size:10px;letter-spacing:.13em;color:#9eb1c9;text-transform:uppercase}.dashboard{margin-top:58px;padding:16px;background:#fff;border-radius:10px}.dashboard img{width:100%;display:block;border-radius:4px}.caveat{margin:18px 0 0;color:#a8bad0;font-size:12px}
+    .risk-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:80px;align-items:center}.bars{padding:32px;border:1px solid var(--line);background:#fff}.bar{margin:24px 0}.bar-label{display:flex;justify-content:space-between;font-size:12px;font-weight:750;margin-bottom:9px}.track{height:9px;background:#e7e9ec}.fill{height:100%;background:var(--blue)}.fill.orange{background:var(--orange)}.risk-copy h2{font-size:clamp(46px,6vw,78px);line-height:.95;letter-spacing:-.055em;margin:18px 0 28px}.risk-copy p{color:var(--muted);font-size:17px;line-height:1.65}.quote{margin-top:34px;padding-left:20px;border-left:3px solid var(--gold);font-size:14px;line-height:1.6}
+    .fit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}.fit{background:var(--paper);padding:30px;min-height:210px}.fit span{font-size:11px;letter-spacing:.14em;color:var(--blue);font-weight:800}.fit h3{font-size:22px;margin:50px 0 12px}.fit p{font-size:13px;line-height:1.55;color:var(--muted)}
+    footer{background:#dce6f3;padding:90px 0}.footer-grid{display:grid;grid-template-columns:1.4fr .6fr;align-items:end;gap:40px}footer h2{font-size:clamp(50px,7vw,90px);line-height:.92;letter-spacing:-.06em;margin:0}footer h2 em{font-family:Georgia,serif;font-weight:400;color:var(--blue)}footer p{color:var(--muted);line-height:1.6}.footer-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.button.secondary{color:var(--ink);background:transparent;border:1px solid var(--ink)}
+    @media(max-width:820px){.hero{min-height:auto;padding-bottom:70px}.hero-copy,.hero-actions{margin-left:0}.signal{position:relative;width:100%;bottom:auto;margin-top:56px}.intro,.risk-grid,.footer-grid{grid-template-columns:1fr;gap:25px}.stages,.metrics{grid-template-columns:1fr 1fr}.stage:nth-child(2){border-right:0}.stage:nth-child(-n+2){border-bottom:1px solid var(--line)}.fit-grid{grid-template-columns:1fr}}
+    @media(max-width:520px){.shell{width:min(100% - 30px,1180px)}.nav-cta{display:none}h1{font-size:56px}.hero-copy{font-size:17px}.hero-actions{align-items:flex-start;flex-direction:column}.stages,.metrics{grid-template-columns:1fr}.stage,.metric{border-right:0;border-bottom:1px solid var(--line)}}
+  </style>
+</head>
+<body>
+  <nav class="shell"><a class="wordmark" href="#top"><b>MG</b> MAPLEGUARD</a><a class="nav-cta" href="#proof">See the proof ↘</a></nav>
+  <main>
+    <section class="hero shell" id="top">
+      <div class="eyebrow"><i></i>BANKING RISK INTELLIGENCE</div>
+      <h1>Built to turn<br><em>risk into action.</em></h1>
+      <p class="hero-copy">A privacy-safe Canadian banking lakehouse—designed to show how clean data, explainable analytics, and sharp business storytelling can support better decisions.</p>
+      <div class="hero-actions"><a class="button" href="#system">View the system →</a><p><strong>Hazim Ali</strong><br>Open to Winter 2027 co-op</p></div>
+      <div class="signal"><div class="signal-head"><span>PORTFOLIO SIGNAL</span><span class="status"><i></i>SYNTHETIC DATA</span></div><div class="signal-line"></div><div class="signal-foot"><span>INGEST</span><span>VALIDATE</span><span>MODEL</span><span>DECIDE</span></div></div>
+    </section>
+    <div class="strip"><div class="shell ticker"><span>Python</span><span>SQL</span><span>Databricks</span><span>Spark ML</span><span>Risk analytics</span><span>BI storytelling</span></div></div>
+
+    <section class="content shell" id="system">
+      <div class="section-label">THE OPERATING MODEL</div>
+      <div class="intro"><h2>From raw event<br>to reviewed alert.</h2><p>Every layer exists for a reason: preserve lineage, improve trust, measure the model, and keep a person in the decision loop.</p></div>
+      <div class="stages">
+        <article class="stage"><span>01</span><h3>Synthetic source</h3><p>60,000 deterministic Canadian transaction events. No customer data.</p></article>
+        <article class="stage"><span>02</span><h3>Trusted lakehouse</h3><p>Bronze, Silver, and Gold layers with explicit quality gates.</p></article>
+        <article class="stage"><span>03</span><h3>Risk intelligence</h3><p>Time-aware modelling, monitored metrics, and behavioural reason codes.</p></article>
+        <article class="stage"><span>04</span><h3>Human decision</h3><p>Executive trends plus a prioritized analyst review queue.</p></article>
+      </div>
+    </section>
+
+    <section class="dark" id="proof"><div class="content shell">
+      <div class="section-label">VALIDATED OUTPUT</div>
+      <div class="intro"><h2>A command centre,<br>not chart decoration.</h2><p>The dashboard is built around five decisions: size the monitored activity, detect movement, find concentration, assess model utility, and prioritize review.</p></div>
+      <div class="metrics"><div class="metric"><b>60K</b><span>Synthetic events</span></div><div class="metric"><b>$7.3M</b><span>Value monitored</span></div><div class="metric"><b>0.798</b><span>Holdout ROC AUC</span></div><div class="metric"><b>54.2%</b><span>Holdout recall</span></div></div>
+      <div class="dashboard"><img src="mapleguard_dashboard_preview.png" alt="MapleGuard dashboard with transaction KPIs, weekly risk trend, and risk rates by channel, province, and merchant category"></div>
+      <p class="caveat">Local QA preview shown. All metrics come from deterministic synthetic data and do not claim production performance.</p>
+    </div></section>
+
+    <section class="content shell">
+      <div class="risk-grid">
+        <div class="bars" aria-label="Alert rate by channel"><div class="bar"><div class="bar-label"><span>E-commerce</span><b>28.2%</b></div><div class="track"><div class="fill orange" style="width:100%"></div></div></div><div class="bar"><div class="bar-label"><span>Mobile wallet</span><b>12.9%</b></div><div class="track"><div class="fill" style="width:45.7%"></div></div></div><div class="bar"><div class="bar-label"><span>ATM</span><b>6.1%</b></div><div class="track"><div class="fill" style="width:21.6%"></div></div></div><div class="bar"><div class="bar-label"><span>Point of sale</span><b>5.3%</b></div><div class="track"><div class="fill" style="width:18.8%"></div></div></div></div>
+        <div class="risk-copy"><div class="section-label">DESIGNING FOR JUDGMENT</div><h2>Show the signal.<br>Expose the trade-off.</h2><p>High recall can help catch more risky events, but it can also create expensive false positives. MapleGuard surfaces precision, recall, F1, average precision, ROC AUC, and false-positive rate together.</p><div class="quote">“The alert rate is workload—not confirmed fraud.” That distinction stays visible in the dashboard, documentation, and review queue.</div></div>
+      </div>
+    </section>
+
+    <section class="content shell">
+      <div class="section-label">BUILT FOR THE 2027 BANKING SIGNAL</div>
+      <div class="intro"><h2>Technical depth.<br>Business clarity.</h2><p>The project was shaped by a live scan of Big Six co-op requirements and packages the strongest common themes into one honest case study.</p></div>
+      <div class="fit-grid"><article class="fit"><span>DATA</span><h3>Python + SQL + Spark</h3><p>Reproducible generation, quality checks, feature engineering, Delta-style marts, and tested outputs.</p></article><article class="fit"><span>RISK</span><h3>Controls + model quality</h3><p>Event-time holdout, class imbalance, threshold governance, reason codes, and explicit limitations.</p></article><article class="fit"><span>DECISION</span><h3>BI + communication</h3><p>Executive KPIs, diagnostic views, prioritized queue, and plain-language interpretation.</p></article></div>
+    </section>
+  </main>
+  <footer><div class="shell footer-grid"><div><div class="section-label">WINTER 2027</div><h2>Let’s build<br><em>trusted intelligence.</em></h2></div><div><p><strong>Hazim Ali</strong><br>Artificial Intelligence student at Sheridan College. Open to data, AI, analytics, risk, and technology co-op opportunities.</p><div class="footer-actions"><a class="button" href="https://github.com/HazimAli07/mapleguard-banking-risk-lakehouse" aria-label="Open the MapleGuard GitHub repository">View GitHub →</a><a class="button secondary" href="#top">Back to top ↑</a></div></div></div></footer>
+</body>
+</html>
