@@ -112,11 +112,12 @@ silver.write.mode("overwrite").option("overwriteSchema", "true").saveAsTable(f"{
 
 # COMMAND ----------
 silver = spark.table(f"{SCHEMA}.silver_transactions")
-train_cutoff, validation_cutoff = silver.approxQuantile("event_ts", [0.56, 0.70], 0.001)
-train = silver.filter(F.col("event_ts") <= F.lit(train_cutoff))
-validation = silver.filter((F.col("event_ts") > F.lit(train_cutoff)) & (F.col("event_ts") <= F.lit(validation_cutoff)))
-development = silver.filter(F.col("event_ts") <= F.lit(validation_cutoff))
-holdout = silver.filter(F.col("event_ts") > F.lit(validation_cutoff))
+events = silver.withColumn("_event_epoch", F.col("event_ts").cast("double"))
+train_cutoff, validation_cutoff = events.approxQuantile("_event_epoch", [0.56, 0.70], 0.001)
+train = events.filter(F.col("_event_epoch") <= F.lit(train_cutoff))
+validation = events.filter((F.col("_event_epoch") > F.lit(train_cutoff)) & (F.col("_event_epoch") <= F.lit(validation_cutoff)))
+development = events.filter(F.col("_event_epoch") <= F.lit(validation_cutoff))
+holdout = events.filter(F.col("_event_epoch") > F.lit(validation_cutoff))
 
 categorical = ["province", "channel", "merchant_category", "customer_segment"]
 numeric = ["log_amount", "is_international", "is_card_present", "device_trust_score", "account_age_days", "transactions_24h", "distance_from_home_km", "hour_of_day"]
