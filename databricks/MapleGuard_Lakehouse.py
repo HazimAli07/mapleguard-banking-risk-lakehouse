@@ -112,82 +112,146 @@ silver.write.mode("overwrite").option("overwriteSchema", "true").saveAsTable(f"{
 
 # COMMAND ----------
 silver = spark.table(f"{SCHEMA}.silver_transactions")
-events = silver.withColumn("_event_epoch", F.col("event_ts").cast("double"))
-train_cutoff, validation_cutoff = events.approxQuantile("_event_epoch", [0.56, 0.70], 0.001)
-train = events.filter(F.col("_event_epoch") <= F.lit(train_cutoff))
-validation = events.filter((F.col("_event_epoch") > F.lit(train_cutoff)) & (F.col("_event_epoch") <= F.lit(validation_cutoff)))
-development = events.filter(F.col("_event_epoch") <= F.lit(validation_cutoff))
-holdout = events.filter(F.col("_event_epoch") > F.lit(validation_cutoff))
+
+# This reference evaluation is intentionally identical to src/mapleguard/model.py.
+# Spark remains the serving/lakehouse layer; scikit-learn provides the
+# reproducible evaluation used by the public case study and metrics files.
+from sklearn.compose import ColumnTransformer
+from sklearn.linear_model import LogisticRegression as SklearnLogisticRegression
+from sklearn.metrics import (
+    average_precision_score,
+    confusion_matrix,
+    f1_score,
+    precision_score,
+    recall_score,
+    roc_auc_score,
+)
+from sklearn.pipeline import Pipeline as SklearnPipeline
+from sklearn.preprocessing import OneHotEncoder, StandardScaler
+
+silver_pd = silver.orderBy("event_ts", "transaction_id").toPandas()
+silver_pd["event_ts"] = pd.to_datetime(silver_pd["event_ts"])
+ordered = silver_pd.sort_values(["event_ts", "transaction_id"]).reset_index(drop=True)
 
 categorical = ["province", "channel", "merchant_category", "customer_segment"]
-numeric = ["log_amount", "is_international", "is_card_present", "device_trust_score", "account_age_days", "transactions_24h", "distance_from_home_km", "hour_of_day"]
-indexers = [StringIndexer(inputCol=c, outputCol=f"{c}_idx", handleInvalid="keep") for c in categorical]
-encoder = OneHotEncoder(inputCols=[f"{c}_idx" for c in categorical], outputCols=[f"{c}_ohe" for c in categorical])
-assembler = VectorAssembler(inputCols=[f"{c}_ohe" for c in categorical] + numeric, outputCol="features")
+numeric = [
+    "amount_cad",
+    "is_international",
+    "is_card_present",
+    "device_trust_score",
+    "account_age_days",
+    "transactions_24h",
+    "distance_from_home_km",
+    "hour_of_day",
+]
+features = categorical + numeric
 
-def add_class_weights(frame):
-    counts = frame.groupBy("is_fraud").count().collect()
-    count_map = {row["is_fraud"]: row["count"] for row in counts}
-    positive_weight = count_map.get(0, 1) / max(count_map.get(1, 1), 1)
-    return frame.withColumn("class_weight", F.when(F.col("is_fraud") == 1, F.lit(float(positive_weight))).otherwise(F.lit(1.0)))
+train_end = ordered["event_ts"].quantile(0.56)
+validation_end = ordered["event_ts"].quantile(0.70)
+train = ordered[ordered["event_ts"] <= train_end]
+validation = ordered[
+    (ordered["event_ts"] > train_end) & (ordered["event_ts"] <= validation_end)
+]
+development = ordered[ordered["event_ts"] <= validation_end]
+holdout = ordered[ordered["event_ts"] > validation_end]
 
-lr = LogisticRegression(featuresCol="features", labelCol="is_fraud", weightCol="class_weight", maxIter=80, regParam=.02, elasticNetParam=0.0)
-pipeline = Pipeline(stages=indexers + [encoder, assembler, lr])
-threshold_model = pipeline.fit(add_class_weights(train))
-validation_pairs = (
-    threshold_model.transform(validation)
-    .select("is_fraud", vector_to_array("probability")[1].alias("risk_score"))
-    .toPandas()
-)
+def make_reference_pipeline():
+    transformer = ColumnTransformer(
+        transformers=[
+            ("categorical", OneHotEncoder(handle_unknown="ignore"), categorical),
+            ("numeric", StandardScaler(), numeric),
+        ]
+    )
+    return SklearnPipeline(
+        steps=[
+            ("features", transformer),
+            (
+                "model",
+                SklearnLogisticRegression(
+                    class_weight="balanced",
+                    max_iter=600,
+                    solver="liblinear",
+                    random_state=SEED,
+                ),
+            ),
+        ]
+    )
+
+tuning_pipeline = make_reference_pipeline()
+tuning_pipeline.fit(train[features], train["is_fraud"])
+validation_probability = tuning_pipeline.predict_proba(validation[features])[:, 1]
 
 threshold_results = []
-for threshold in np.arange(.10, .81, .02):
-    predicted = validation_pairs["risk_score"].to_numpy() >= threshold
-    actual = validation_pairs["is_fraud"].to_numpy() == 1
-    tp_v = int(np.sum(predicted & actual))
-    fp_v = int(np.sum(predicted & ~actual))
-    fn_v = int(np.sum(~predicted & actual))
-    precision_v = tp_v / max(tp_v + fp_v, 1)
-    recall_v = tp_v / max(tp_v + fn_v, 1)
-    f1_v = 2 * precision_v * recall_v / max(precision_v + recall_v, 1e-12)
-    threshold_results.append((float(threshold), recall_v, f1_v))
-eligible_thresholds = [row for row in threshold_results if row[1] >= .55]
-THRESHOLD = max(eligible_thresholds or threshold_results, key=lambda row: row[2])[0]
+for value in np.arange(0.10, 0.81, 0.02):
+    predicted = validation_probability >= value
+    recall_v = recall_score(validation["is_fraud"], predicted, zero_division=0)
+    f1_v = f1_score(validation["is_fraud"], predicted, zero_division=0)
+    threshold_results.append((float(value), recall_v, f1_v))
+eligible = [row for row in threshold_results if row[1] >= 0.55]
+THRESHOLD = float(max(eligible or threshold_results, key=lambda row: row[2])[0])
 
-model = threshold_model
+final_pipeline = make_reference_pipeline()
+final_pipeline.fit(development[features], development["is_fraud"])
+holdout_probability = final_pipeline.predict_proba(holdout[features])[:, 1]
+holdout_prediction = (holdout_probability >= THRESHOLD).astype(int)
 
-holdout_scored = model.transform(holdout).withColumn("risk_score", vector_to_array("probability")[1])
-holdout_scored = holdout_scored.withColumn("is_alert", (F.col("risk_score") >= THRESHOLD).cast("int"))
+tn, fp, fn, tp = confusion_matrix(
+    holdout["is_fraud"], holdout_prediction, labels=[0, 1]
+).ravel()
+roc_auc = float(roc_auc_score(holdout["is_fraud"], holdout_probability))
+avg_precision = float(average_precision_score(holdout["is_fraud"], holdout_probability))
+precision = float(precision_score(holdout["is_fraud"], holdout_prediction, zero_division=0))
+recall = float(recall_score(holdout["is_fraud"], holdout_prediction, zero_division=0))
+f1 = float(f1_score(holdout["is_fraud"], holdout_prediction, zero_division=0))
+false_positive_rate = float(fp / max(fp + tn, 1))
 
-roc_auc = BinaryClassificationEvaluator(labelCol="is_fraud", rawPredictionCol="rawPrediction", metricName="areaUnderROC").evaluate(holdout_scored)
-avg_precision = BinaryClassificationEvaluator(labelCol="is_fraud", rawPredictionCol="rawPrediction", metricName="areaUnderPR").evaluate(holdout_scored)
-confusion = holdout_scored.agg(
-    F.sum(((F.col("is_fraud") == 1) & (F.col("is_alert") == 1)).cast("int")).alias("tp"),
-    F.sum(((F.col("is_fraud") == 0) & (F.col("is_alert") == 1)).cast("int")).alias("fp"),
-    F.sum(((F.col("is_fraud") == 1) & (F.col("is_alert") == 0)).cast("int")).alias("fn"),
-    F.sum(((F.col("is_fraud") == 0) & (F.col("is_alert") == 0)).cast("int")).alias("tn"),
-).first()
-precision = confusion.tp / max(confusion.tp + confusion.fp, 1)
-recall = confusion.tp / max(confusion.tp + confusion.fn, 1)
-f1 = 2 * precision * recall / max(precision + recall, 1e-12)
-false_positive_rate = confusion.fp / max(confusion.fp + confusion.tn, 1)
+# Score the full history for the Gold operational products.
+scored_pd = ordered.copy()
+scored_pd["risk_score"] = final_pipeline.predict_proba(scored_pd[features])[:, 1]
+scored_pd["is_alert"] = (scored_pd["risk_score"] >= THRESHOLD).astype(int)
+scored_pd["risk_tier"] = pd.cut(
+    scored_pd["risk_score"],
+    bins=[-0.001, 0.25, 0.50, 0.75, 1.001],
+    labels=["Low", "Guarded", "High", "Critical"],
+).astype(str)
 
-# Score the full history for monitored operational views.
-scored = model.transform(silver).withColumn("risk_score", vector_to_array("probability")[1])
-scored = (
-    scored
-    .withColumn("is_alert", (F.col("risk_score") >= THRESHOLD).cast("int"))
-    .withColumn("risk_tier", F.when(F.col("risk_score") >= .75, "Critical").when(F.col("risk_score") >= .50, "High").when(F.col("risk_score") >= .25, "Guarded").otherwise("Low"))
-    .withColumn("reason_code", F.concat_ws(", ",
-        F.when(F.col("is_international") == 1, F.lit("international")),
-        F.when(F.col("device_trust_score") < 35, F.lit("low device trust")),
-        F.when(F.col("transactions_24h") >= 8, F.lit("high velocity")),
-        F.when(F.col("amount_cad") >= 500, F.lit("high amount")),
-        F.when(F.col("is_unusual_hour") == 1, F.lit("unusual hour")),
-        F.when(F.col("distance_from_home_km") >= 120, F.lit("distance anomaly")),
-        F.when(F.col("is_new_account") == 1, F.lit("new account")),
-    ))
-)
+def reference_reason_code(row):
+    reasons = []
+    if row["is_international"] == 1:
+        reasons.append("international")
+    if row["device_trust_score"] < 35:
+        reasons.append("low device trust")
+    if row["transactions_24h"] >= 8:
+        reasons.append("high velocity")
+    if row["amount_cad"] >= 500:
+        reasons.append("high amount")
+    if row["hour_of_day"] <= 4 or row["hour_of_day"] >= 23:
+        reasons.append("unusual hour")
+    if row["distance_from_home_km"] >= 120:
+        reasons.append("distance anomaly")
+    if row["account_age_days"] < 90:
+        reasons.append("new account")
+    return ", ".join(reasons[:3]) if reasons else "combined behavioural signal"
+
+scored_pd["reason_code"] = scored_pd.apply(reference_reason_code, axis=1)
+scored_pd["event_date"] = scored_pd["event_ts"].dt.date
+scored_pd["week_start"] = (
+    scored_pd["event_ts"]
+    - pd.to_timedelta(scored_pd["event_ts"].dt.weekday, unit="D")
+).dt.date
+
+int_columns = [
+    "is_international",
+    "is_card_present",
+    "account_age_days",
+    "transactions_24h",
+    "hour_of_day",
+    "is_fraud",
+    "is_alert",
+]
+for column in int_columns:
+    scored_pd[column] = scored_pd[column].astype(int)
+scored = spark.createDataFrame(scored_pd)
 
 # COMMAND ----------
 # MAGIC %md
