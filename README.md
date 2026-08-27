@@ -10,6 +10,10 @@ MapleGuard is a privacy-safe, end-to-end banking analytics portfolio project bui
 
 It turns deterministic synthetic Canadian transaction data into governed Bronze, Silver, and Gold data products; trains and evaluates a transparent transaction-risk model; prioritizes a human-review alert queue; and powers an executive Databricks dashboard. The [public case study](https://hazimali07.github.io/mapleguard-banking-risk-lakehouse/) is the recruiter-facing view; the interactive Databricks workspace version requires sign-in.
 
+## Tools
+
+Python · PySpark · Databricks · Delta Lake · Spark SQL · scikit-learn · pytest · GitHub Actions
+
 > **Responsible-use note:** All records are synthetic. This project is a learning and portfolio demonstration—not a production fraud, credit, or customer-decision system.
 
 ![MapleGuard dashboard preview](docs/mapleguard_dashboard_preview.png)
