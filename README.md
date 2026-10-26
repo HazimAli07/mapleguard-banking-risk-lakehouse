@@ -1,12 +1,12 @@
 # MapleGuard — Banking Transaction Risk Lakehouse
 
 [![Validate MapleGuard](https://github.com/HazimAli07/mapleguard-banking-risk-lakehouse/actions/workflows/ci.yml/badge.svg)](https://github.com/HazimAli07/mapleguard-banking-risk-lakehouse/actions/workflows/ci.yml)
-[![Live case study](https://img.shields.io/badge/Live_case_study-Winter_2027-1769e0)](https://hazimali07.github.io/mapleguard-banking-risk-lakehouse/)
+[![Live case study](https://img.shields.io/badge/Live_case_study-Portfolio-1769e0)](https://hazimali07.github.io/mapleguard-banking-risk-lakehouse/)
 [![Synthetic data](https://img.shields.io/badge/Data-100%25_synthetic-e6b84f)](DATA_NOTICE.md)
 
 ![MapleGuard architecture](docs/architecture.svg)
 
-MapleGuard is a privacy-safe, end-to-end banking analytics portfolio project built by **Hazim Ali**, a Sheridan Artificial Intelligence student open to a **Winter 2027 co-op**.
+MapleGuard is a banking analytics portfolio project built by **Hazim Ali** using fully synthetic transaction data.
 
 It turns deterministic synthetic Canadian transaction data into governed Bronze, Silver, and Gold data products; trains and evaluates a transparent transaction-risk model; prioritizes a human-review alert queue; and powers an executive Databricks dashboard. The [public case study](https://hazimali07.github.io/mapleguard-banking-risk-lakehouse/) is the recruiter-facing view; the interactive Databricks workspace version requires sign-in.
 
@@ -35,7 +35,7 @@ The low precision and elevated false-positive rate are intentionally visible: th
 
 ## Why this project exists
 
-A live scan of Winter 2027 bank postings found a consistent candidate profile: Python and SQL, BI storytelling, data pipelines, data quality, risk awareness, model evaluation, automation, stakeholder communication, and the ability to translate complex analysis into a clear recommendation. MapleGuard demonstrates those capabilities in one coherent banking use case. See the [evidence matrix](docs/bank_requirements_matrix.md).
+The project brings data engineering, reporting automation and model evaluation together in one transaction-risk use case. It demonstrates Python and SQL workflows, data-quality controls, dashboard reporting, threshold trade-offs and a documented human-review process. The [requirements matrix](docs/bank_requirements_matrix.md) retains the original dated research context.
 
 ## What the project demonstrates
 
@@ -111,4 +111,4 @@ No secret, external API, paid dataset, or customer data is required.
 
 ## About the author
 
-**Hazim Ali** — Artificial Intelligence student at Sheridan College, open to Winter 2027 co-op opportunities in data, analytics, AI, risk, and technology.
+**Hazim Ali** — data analyst with a mechanical engineering background, completing Sheridan College's Ontario College Graduate Certificate in Artificial Intelligence: Development and Applications (expected April 2027).
